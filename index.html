@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoME26</title> 
+    <!-- <link rel="icon" type="image/png" href="assets/logo-continente.png"/>     EDITAR ICONE -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">  
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        @media (max-width: 1024px) {
+        nav ul {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            background-color: rgba(75, 85, 99, 0.95);
+            padding: 1rem;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            display: none;
+        }
+
+        nav ul.show {
+            display: flex;
+        }
+
+        nav .menu-toggle {
+            display: block;
+            cursor: pointer;
+        }
+
+        nav ul li {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        #continenteZoom {
+            width: 100%;
+            scale: 1.1 !important;
+        }
+
+        .text-5xl {
+            font-size: 2.25rem;
+        }
+
+        .text-4xl {
+            font-size: 2rem;
+        }
+
+        .text-3xl {
+            font-size: 1.75rem;
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+        }
+
+        .text-lg {
+            font-size: 1rem;
+        }
+
+        .text-base {
+            font-size: 0.875rem;
+        }
+
+        .gap-44 {
+            gap: 2rem !important;
+        }
+
+        .gap-24 {
+            gap: 1.5rem !important;
+        }
+
+        .w-50 {
+            width: 60% !important;
+        }
+
+        .h-10 {
+            height: auto !important;
+        }
+
+        .h-22, .h-16, .h-12 {
+            height: auto !important;
+        }
+
+        .md\\:px-20 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+    </style>
+</head>
+
+<body class="bg-gradient-to-b bg-[#FEFFC4] text-gray-900 min-h-screen flex flex-col antialiased">
+    
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#0046FF] bg-opacity-60 text-white py-4 px-6 flex justify-between items-center">
+        <div class="text-xl font-bold">
+            <a href="index.html" class="hover:text-blue-900 transition font-bold">RoME26</a>
+        
+        </div>
+        <div class="menu-toggle md:hidden text-white text-2xl mr-4">
+            ☰
+        </div>
+        <ul class="hidden md:flex flex-col md:flex-row gap-4 text-white text-lg font-medium menu-list">
+            <li><a href="index.html" class="hover:text-blue-900 transition font-bold">Home</a></li>  
+            <li><a href="#keynote" class="hover:text-blue-900 transition font-bold">Keynote Speaker</a></li>  
+            <li><a href="#local" class="hover:text-blue-900 transition font-bold">Location</a></li>
+            <li><a href="program.html" class="hover:text-blue-900 transition font-bold">Program</a></li>
+            <li><a href="registration.html" class="hover:text-blue-900 transition font-bold">Registration</a></li>  <!--EDITAR HREF-->
+            <li><a href="mailto:" class="hover:text-blue-900 transition font-bold">Contact</a></li>
+        </ul>
+          
+    </nav>
+
+    <!--BANNER-->
+    <section id="index" class="relative bg-[url('assets/pontejk.png')] bg-center py-16">
+        <div class="absolute inset-0 bg-blue-100/20"></div>
+      
+        <div class="relative z-10 container mx-auto md:px-20 py-16 grid md:grid-cols-2 items-center justify-center text-center md:text-left gap-8">
+          <!-- Texto -->
+          <div class="md:pr-10">
+            <h1 class="text-5xl md:text-6xl xl:text-6xl font-bold leading-tight">
+              <a style="color: #001BB7;">Fourth Summer School on <br> Robotic Mission Engineering </a><br>
+            </h1>
+            <h2 class="mt-6">
+              <a  class="text-2xl md:text-3xl font-bold">February 23 - 27 • Brasilia/DF </a>
+            </h2>
+            <a class="mt-10 inline-block bg-[#1C6EA4] hover:bg-purple-800 text-white px-8 py-4 rounded-xl font-semibold text-lg transition">
+              Registration open!  <!--EDITAR HREF-->
+            </a>
+          </div>      
+    
+        </div>
+      </section>
+      
+
+    <section id="sobre" class="relative bg-cover bg-center mt-8 md:px-20">
+        <div class="container mx-auto grid md:grid-cols-2 items-center gap-8 px-6 py-12">
+            <div class="md:pr-10"><br>
+                <p class="text-2xl font-bold mt-2">About the event</p>
+                <h2 style="color: #001BB7;"  class="text-4xl md:text-5xl font-semibold text-[#673FBC]">
+                    <strong>What is RoME?</strong>
+                </h2>
+                <br>
+                <p class="text-lg mt-2 text-justify">
+                    The International Summer School on Robotic Mission Engineering (RoME) aims to promote the engineering of missions of robotic applications through systematic approaches of Software Engineering. 
+                    This year, RoME is funded by ACM Sigsoft. In its second edition, we will have four days event full of presentations, working sessions, lots of discussions and opportunities to engage on very interesting research topics.
+                    The expected outcomes of this summer school are to:<br>                    
+                    (i) promote the dissemination of scientific research and its practical application regarding the engineering of autonomous robotic missions through systematic approaches to Software Engineering; <br>
+                    (ii) promote technological innovation with the research community in robotic and in Software Engineering. <br>
+                    (iii) attract students to contribute to the development of the proposed research and <br>                    
+                    (iv) foster research collaboration between international academic centers of excellence!
+                </p>
+
+            </div> 
+
+            <div class="flex justify-center items-center mt-24">     
+                <img src="assets/RoMELogo.png" alt="Robô" 
+                class="w-3/5 transition-transform duration-500 hover:scale-110">
+            </div>
+        </div>
+    </section>
+
+    <section id="keynote" class="relative bg-cover bg-center md:px-20 py-10">
+        <div class="container mx-auto grid md:grid-cols-1 items-center gap-8 ">
+            <h2 style="color: #001BB7;" class="text-4xl md:text-5xl font-semibold text-[#673FBC]">
+                <strong>Keynotes Spekaers</strong>
+            </h2>
+                <br>
+            <div class="container mx-auto px-6 md:px-10 grid gap-14 md:grid-cols-4">
+                <div class ="bg-[#fadc69] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                    <img
+                        src="assets/RoMELogo.png"
+                        alt="Keynote 1"
+                        class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
+                    />
+                    <h2 style="color: #001BB7;" class="text-lg font-bold leading-tight">
+                        Keynote 1
+                    </h2>
+                    <p class="text-black mt-2">Descrição</p>
+                    <a href="https://cic.unb.br/" target="_blank" class="mt-4 inline-block bg-[#1C6EA4] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
+                        Faculdade
+                    </a>
+                </div>
+                <div class ="bg-[#fadc69] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                    <img
+                    src="assets/RoMELogo.png"
+                    alt="Keynote 1"
+                    class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
+                    />
+                    <h2 style="color: #001BB7;" class="text-lg font-bold leading-tight">
+                        Keynote 1
+                    </h2>
+                    <p class="text-black mt-2">Descrição</p>
+                    <a href="https://cic.unb.br/" target="_blank" class="mt-4 inline-block bg-[#1C6EA4] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
+                        Faculdade
+                    </a>
+                </div>
+                <div class ="bg-[#fadc69] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                    <img
+                    src="assets/RoMELogo.png"
+                    alt="Keynote 1"
+                    class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
+                    />
+                    <h2 style="color: #001BB7;" class="text-lg font-bold leading-tight">
+                        Keynote 1
+                    </h2>
+                    <p class="text-black mt-2">Descrição</p>
+                    <a href="https://cic.unb.br/" target="_blank" class="mt-4 inline-block bg-[#1C6EA4] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
+                        Faculdade
+                    </a>
+                </div>
+                <div style="color: #001BB7;" class ="bg-[#fadc69] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                    <img
+                    src="assets/RoMELogo.png"
+                    alt="Keynote 1"
+                    class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
+                    />
+                    <h2 class="text-lg font-bold leading-tight">
+                        Keynote 1
+                    </h2>
+                    <p class="text-black mt-2">Descrição</p>
+                    <a href="https://cic.unb.br/" target="_blank" class="mt-4 inline-block bg-[#1C6EA4] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
+                        Faculdade
+                    </a>
+                </div>
+            </div>
+    </section>
+
+    <section id="target" class="relative bg-cover bg-center mt-8 md:px-20">
+        <div class="container mx-auto grid md:grid-cols-2 items-center gap-8 px-6 py-12">
+          
+            <div class="flex justify-center items-center">     
+                <img src="assets/students.png" alt="Students" 
+                class="transition-transform duration-500 hover:scale-110">
+            </div>
+
+            <div class="md:pr-10"><br>
+                <h2 style="color: #001BB7;"  class="text-4xl md:text-5xl font-semibold text-[#673FBC]">
+                    <strong>Target Audience</strong>
+                </h2>
+                <br>
+                <p class="text-lg mt-2 text-justify">
+                    PhD, Master and (advanced) undergraduates students in:<br>                    
+                    (i) Computer Science <br>
+                    (ii) Engineering<br>
+                    (iii) Mechatronics <br>                    
+                    (iv) and alike!
+                </p>
+            </div> 
+        </div>
+    </section>
+
+    <section id="topics" class="relative bg-cover bg-center md:px-20">
+        <div class="container mx-auto grid md:grid-cols-1 items-center gap-4">
+            <h2 style="color: #001BB7;" class="text-4xl md:text-5xl font-semibold text-[#673FBC]">
+                <strong>Topics of Interest</strong>
+            </h2>
+                <br>
+            <div class="container mx-auto px-6 md:px-10 grid gap-14 md:grid-cols-4">
+                <div class ="bg-[#fadc69] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                    <h2 style="color: #001BB7;" class="text-lg font-bold leading-tight">
+                        Self-adaptiveness and autonomous solutions for robotic mission engineering
+                    </h2>
+                </div>
+                <div class ="bg-[#fadc69] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                    <h2 style="color: #001BB7;" class="text-lg font-bold leading-tight">
+                        Requirements modelling, specification and verification for robotic mission engineering
+                    </h2>
+                </div>
+                <div class ="bg-[#fadc69] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                    <h2 style="color: #001BB7;" class="text-lg font-bold leading-tight">
+                        Runtime architecture for robotic mission engineering
+                    </h2>
+                </div>
+                <div style="color: #001BB7;" class ="bg-[#fadc69] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                    <h2 class="text-lg font-bold leading-tight">
+                        Runtime verification for robotic mission engineering
+                    </h2>
+                </div>
+                <div style="color: #001BB7;" class ="bg-[#fadc69] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                    <h2 class="text-lg font-bold leading-tight">
+                        Simulation-oriented robotic mission engineering
+                    </h2>
+                </div>
+                <div style="color: #001BB7;" class ="bg-[#fadc69] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                    <h2 class="text-lg font-bold leading-tight">
+                        Empirical methods for robotic mission engineering
+                    </h2>
+                </div>
+                <div style="color: #001BB7;" class ="bg-[#fadc69] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                    <h2 class="text-lg font-bold leading-tight">
+                        Field-based testing in robotic systems
+                    </h2>
+                </div>
+                <div style="color: #001BB7;" class ="bg-[#fadc69] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                    <h2 class="text-lg font-bold leading-tight">
+                        ROS-based systems
+                    </h2>
+                </div>
+            </div>
+    </section>
+
+    <section id="local" class="relative bg-cover bg-center md:px-20">
+        <div class="container mx-auto grid md:grid-cols-2 items-center gap-8 px-6 py-12">
+            <div class="md:pr-10"><br>
+                <p class="text-2xl font-bold mt-2">Location</p>
+                <h2 style="color: #001BB7;"  class="text-4xl md:text-5xl font-semibold text-[#673FBC]">
+                    <strong> Brasilia • Brazil</strong>
+                </h2>
+                <br>
+                <p class="text-lg mt-2 text-justify">
+                    The Computer Science Department (CIC) at the University of Brasília is a leading institution in teaching and research in technology. Located at the Institute of Exact Sciences on the Darcy Ribeiro campus, the CIC offers undergraduate and graduate programs, as well as innovative projects. It is an active and collaborative space, ideal for hosting academic and technological events.
+                </p>
+
+            </div> 
+
+            <div class="flex justify-center items-center mt-24">     
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.8593208549!2d-47.87162942392899!3d-15.758579622076132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3bb88f71361f%3A0x3933d293e644ad55!2zUHLDqWRpbyBkZSBDacOqbmNpYSBkYSBDb21wdXRhw6fDo28gZSBFc3RhdMOtc3RpY2EgLSBDSUMvRVNU!5e0!3m2!1spt-BR!2sbr!4v1749359698999!5m2!1spt-BR!2sbr" 
+                width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="w-full"
+                referrerpolicy="no-referrer-when-downgrade">
+                 </iframe>
+            </div>
+        </div>
+       
+    </section>
+
+    <br>
+
+    <section id="instituicoes" class="px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+        
+        <!-- Patrocinadores -->
+        <div class="flex flex-col items-center justify-center mb-12 md:mb-16">
+            <h2 style="color: #001BB7;" class="text-2xl md:text-3xl lg:text-4xl font-bold text-[#673FBC] mb-8 text-center">
+                SUPPORT
+            </h2>
+            <!-- <a href="https://www.fap.df.gov.br/" class="w-full max-w-xs md:max-w-md transition-transform hover:scale-105">
+                <img src="assets/instituicao/fapdf.png" alt="FAPDF" 
+                     class="w-full h-auto max-h-24 md:max-h-32 object-contain"/>
+            </a> -->
+        </div> 
+    
+        <!-- Apoio -->
+        <div class="flex flex-col items-center justify-center mb-12 md:mb-16">
+            <h2 style="color: #001BB7;" class="text-2xl md:text-3xl lg:text-4xl font-bold text-[#673FBC] mb-8 text-center">
+                SPONSORS
+            </h2>
+            
+            <!-- Primeira linha de apoio -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-10 w-full max-w-6xl mx-auto">
+                <!-- <a href="https://secti.df.gov.br/" class="flex justify-center items-center h-80 md:h-80 transition-transform hover:scale-105">
+                    <img src="assets/apoio/secti.webp" alt="SECTI" class="w-auto h-full object-contain"/>
+                </a> -->
+            </div>
+            
+            <!-- Segunda linha de apoio -->
+            <div class="grid grid-cols-1 sm:grid-cols-4 gap-6 md:gap-10 w-full max-w-6xl mx-auto mt-8 md:mt-12">
+                <!-- <a href="https://www.instagram.com/rsturismoeventos/" class="flex mt-20 justify-center items-center h-24 md:h-32 transition-transform hover:scale-105">
+                    <img src="assets/instituicao/rs.png" alt="Grupo RS Turismo" class="w-auto h-full object-contain"/>
+                </a> -->
+            </div>
+        </div> 
+
+    </section>
+
+    <br>
+    <br>
+    <footer id="contato" class="bg-gray-800 text-gray-200 py-10 w-full h-full">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-center md:justify-between items-center gap-10">
+        
+            <!-- Coluna 1: Logo + Data -->
+            <div class="flex flex-col items-center md:items-start">
+                <img src="assets/RoMELogo.png" alt="Logo do Fórum" class="w-40 mb-3 hover:scale-110 transition-transform duration-300">
+            </div>
+        
+            <!-- Coluna 2: Redes Sociais -->
+            <div class="flex flex-col items-center">
+                <h2 class="text-xl font-semibold mb-4">Forth Summer School on Robotic Mission Engineering</h2>
+                <h3 class="text-xl font-semibold mb-4">February 23 - 27 </h3>
+            </div>
+
+            <!-- Coluna 3: Contato EDITAR -->
+            <div class="flex flex-col items-center md:items-start">
+                <h2 class="text-xl font-semibold mb-4">CONTACT</h2>
+                <p class="text-sm mb-1">Email: <a href="mailto:" class="underline hover:text-purple-500">contato@contado.com</a></p>
+            </div>
+        
+        </div>
+        
+        <hr class="border-gray-700 my-8 mx-auto max-w-7xl" />
+        
+        <div class="text-center text-sm text-gray-400 px-6">
+            2025. Summer School Organizers ©. Design and developmente by
+            <a href="https://www.linkedin.com/in/anabraz26?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="underline hover:text-purple-500 font-semibold">Ana Caroline.</a>
+        </div>
+    </footer>
+        
+
+    <!-- Menu resposivo -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navList = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('show');
+        });
+    </script>
+    </body>
+
+    <!-- Zoom do mapa principal -->
+    <script>
+        window.addEventListener('scroll', () => {
+            const floral = document.getElementById('continenteZoom');
+            const scrollTop = window.scrollY;
+            const zoom = Math.min(1 + scrollTop / 800, 1.2); 
+            floral.style.transform = `scale(${zoom})`;
+        });
+    </script>
+
+</html>

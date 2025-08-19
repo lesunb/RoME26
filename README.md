@@ -2,43 +2,45 @@
 <img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
 
-## RoME 26
-Official Site for the Fourth Summer School on Roboctic Mission Engineering (RoME) 2026.
+# RoME 26
 
-## 🔨 Funcionalidades do projeto
+Official website for the **Fourth Summer School on Robotic Mission Engineering (RoME) 2026**.
 
-- Página inicial com carrossel de imagens sobre o evento e mensagens de boas-vindas.
-- Abas com conteúdo dinâmico sobre:
-  - `Palestrantes`: cards personalizados com foto e biografia detalhada.
-  - `Programação`: agenda completa dividida por dias e horários, com tabela interativa.
-- `Responsividade`: adaptação para celulares, tablets e desktops.
-- `Navegação dinâmica`: sem recarregar a página (uso de JavaScript simples).
-- `Design acessível`: contraste, tipografia e organização legível.
+---
 
-## ✔️ Técnicas e tecnologias utilizadas
+## 🔨 Features
 
-- `HTML5`: estrutura semântica do site.
-- `TailwindCSS`: estilização moderna, responsiva e utilitária.
-- `JavaScript (vanilla)`: manipulação de abas e interação com elementos da página.
-- `Flexbox & Grid`: organização visual dos componentes.
-- `Design Responsivo`: visualização adequada em diferentes dispositivos.
-- `Acessibilidade`: fontes legíveis, cores contrastantes, navegação clara.
+- **Home Page**: essential information about the event.  
+- **Dynamic Tabs** with content such as:  
+  - `Program`: custom cards with photos and detailed biographies.  
+  - `Working Sessions`: full schedule organized by day and time, with an interactive table.  
+  - `Registrations`: complete registration schedule, also organized by day and time with an interactive table.  
+- **Responsive Design**: adapts seamlessly to mobile, tablet, and desktop.  
+- **Dynamic Navigation**: no full page reloads (simple JavaScript).  
+- **Accessible Layout**: readable typography, proper contrast, and clear structure.  
 
-## 📁 Acesso ao projeto
+---
 
-Você pode acessar o repositório completo no GitHub:
-🔗 [https://github.com/aadriellyy/LAWomenSTEM] (https://github.com/aadriellyy/LAWomenSTEM)
+## ✔️ Technologies Used
 
-Ou visualizar o site ao vivo em:
-🌐 Em breve..
+- `HTML5` → semantic structure of the site  
+- `TailwindCSS` → modern, responsive, utility-first styling  
+- `JavaScript` → tab management and page interactions  
+- `Flexbox & Grid` → visual organization of components  
+- `Responsive Design` → optimized for different devices  
+- `Accessibility` → legible fonts, high-contrast colors, and intuitive navigation  
 
-## 🛠️ Abrir e rodar o projeto
 
-1. Clone o repositório:
+## 📁 Acess
+
+🔗 [https://github.com/AnaBraz26/RoME26] or
+
+🌐 Soon..
+
+## 🛠️ Open and Run the Project
+
+1. Clone the repository:
    ```bash
-   git clone https://github.com/usuario/LAWomenSTEM.git
-   cd LAWomenSTEM
-   ```
-2. Abra o arquivo `index.html` no navegador ou use o Live Server do VS Code.
-3. Verifique se os arquivos de imagem e estilo estão no local correto (`/assets`).
+   git clone https://github.com/AnaBraz26/RoME26.git
+   
 

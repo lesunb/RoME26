@@ -35,12 +35,11 @@ Official website for the **Fourth Summer School on Robotic Mission Engineering (
 
 🔗 [https://github.com/AnaBraz26/RoME26] or
 
-🌐 Soon..
+🌐 [https://rome26.vercel.app/]
 
 ## 🛠️ Open and Run the Project
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/AnaBraz26/RoME26.git
-   
+   git clone https://github.com/AnaBraz26/RoME26.git  
 

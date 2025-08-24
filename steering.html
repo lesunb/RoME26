@@ -127,44 +127,79 @@
           
     </nav>
 
-    <section id="local" class="relative bg-cover bg-center mt-12 md:px-20 py-10">
-        <div class="container mx-auto grid md:grid-cols-2 items-start gap-10 px-6 py-12">
-            <div class="md:pr-10">
-                <h2 class="text-4xl md:text-5xl font-bold text-[#001BB7] mb-5">
-                   Accommodation
-                </h2>
-            
-                <!-- Abas -->
-                <div class="flex border-b border-blue-600 mb-8 space-x-8 text-lg font-semibold">
-                    <button onclick="showTab('cidade')" id="tab-cidade" class="pb-2 border-b-4 border-[#001BB7] text-[#000000] hover:text-[#673FBC]">Apartments</button>
-                </div>
-            
-                <div id="tab-content-cidade" class="block">
-                    <p class="text-lg leading-relaxed text-justify">
-                        The University of Brasilia will offer shared apartments exclusively for RoME participants within walking distance of the venue. The shared apartments will be able to accommodate up to 15 people, who will be allocated according to the order in which they are requested. We therefore recommend that you apply as soon as possible to secure your spot, together with your registration receipt.<br><br>
+    <!------------------------------------------ Patrocinios e Suporte ---------------------------------------------------------------------------------->
 
-                        An important note: The accommodation is free of charge for the five days of RoME. If you wish to extend your stay, the additional daily rate will be BRL 49.00 per day. Please, make sure you bring your own bed linen, towels, toiletries as these items are not provided by the University of Brasilia.<br><br>
-                        
-                        To apply for a reservation, please fill out the form available at this link. <br><br>
-                        
-                        We are happy to answer any questions and look forward to welcoming you on this very special venue! <br>
-                        
-                        </p>
+   
+    <section id="steering" class="relative bg-cover bg-center md:px-20 py-10">
+        <div class="container mx-auto grid md:grid-cols-1 items-center gap-8 ">
+            <h2 style="color: #001BB7;" class="text-4xl md:text-5xl font-semibold text-[#673FBC]">
+                <strong>Steering</strong>
+            </h2>
+                <br>
+            <div class="container mx-auto px-6 md:px-10 grid gap-14 md:grid-cols-4">
+                <div class ="bg-[#BED7DC] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                    <img
+                        src="assets/RoMELogo.png"
+                        alt="Keynote 1"
+                        class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
+                    />
+                    <h2 style="color: #001BB7;" class="text-lg font-bold leading-tight">
+                        Keynote 1
+                    </h2>
+                    <p class="text-black mt-2">Descrição</p>
+                    <a href="https://cic.unb.br/" target="_blank" class="mt-4 inline-block bg-[#1C6EA4] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
+                        Faculdade
+                    </a>
+                </div>
+                <div class ="bg-[#BED7DC] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                    <img
+                    src="assets/RoMELogo.png"
+                    alt="Keynote 1"
+                    class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
+                    />
+                    <h2 style="color: #001BB7;" class="text-lg font-bold leading-tight">
+                        Keynote 1
+                    </h2>
+                    <p class="text-black mt-2">Descrição</p>
+                    <a href="https://cic.unb.br/" target="_blank" class="mt-4 inline-block bg-[#1C6EA4] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
+                        Faculdade
+                    </a>
+                </div>
+                <div class ="bg-[#BED7DC] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                    <img
+                    src="assets/RoMELogo.png"
+                    alt="Keynote 1"
+                    class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
+                    />
+                    <h2 style="color: #001BB7;" class="text-lg font-bold leading-tight">
+                        Keynote 1
+                    </h2>
+                    <p class="text-black mt-2">Descrição</p>
+                    <a href="https://cic.unb.br/" target="_blank" class="mt-4 inline-block bg-[#1C6EA4] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
+                        Faculdade
+                    </a>
+                </div>
+                <div style="color: #001BB7;" class ="bg-[#BED7DC] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                    <img
+                    src="assets/RoMELogo.png"
+                    alt="Keynote 1"
+                    class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
+                    />
+                    <h2 class="text-lg font-bold leading-tight">
+                        Keynote 1
+                    </h2>
+                    <p class="text-black mt-2">Descrição</p>
+                    <a href="https://cic.unb.br/" target="_blank" class="mt-4 inline-block bg-[#1C6EA4] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
+                        Faculdade
+                    </a>
                 </div>
             </div>
-        
-            <div class="relative w-full">
-                <!-- Carrossel -->
-                <div id="carousel-container" class="aspect-square h-full rounded-2xl overflow-hidden shadow-lg">
-                    <img id="carousel-image" src="assets/apartamento/sala.jpeg" class="w-full h-full object-cover transition duration-500" />
-                    <button onclick="prevImage()" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 text-white px-3 py-1 rounded-r">‹</button>
-                    <button onclick="nextImage()" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 text-white px-3 py-1 rounded-l">›</button>
-                </div>
-            </div>
-        </div>
     </section>
 
-    <footer id="contato" class="bg-[#11324D] text-gray-200 py-10 w-full h-full">
+
+    <!------------------------------------------ Footer ---------------------------------------------------------------------------------->
+
+    <footer id="contato" class="bg-[#11324D] text-gray-200 py-10 w-full h-full mt-24">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-center md:justify-between items-center gap-10">
         
             <!-- Coluna 1: Logo + Data -->
@@ -194,28 +229,16 @@
         </div>
     </footer>
         
-   
-   <!-- carrosel das fotos -->
-   <script>
-        const images = ['assets/apartamento/sala.jpeg', 'assets/apartamento/sala2.jpeg', 'assets/apartamento/sacada.jpeg', 'assets/apartamento/sacada2.jpeg', 
-                        'assets/apartamento/cozinha.jpeg', 'assets/apartamento/cozinha2.jpeg', 'assets/apartamento/banheiro.jpeg', 'assets/apartamento/quarto.jpeg', 'assets/apartamento/quarto2.jpeg'];
-        let currentIndex = 0;
 
-        function showImage(index) {
-            document.getElementById("carousel-image").src = images[index];
-        }
+    <!-- Menu resposivo -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navList = document.querySelector('nav ul');
 
-        function prevImage() {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            showImage(currentIndex);
-        }
-
-        function nextImage() {
-            currentIndex = (currentIndex + 1) % images.length;
-            showImage(currentIndex);
-        }
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('show');
+        });
     </script>
-
-</body>
+    </body>
 
 </html>

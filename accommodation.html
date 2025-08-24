@@ -127,90 +127,42 @@
           
     </nav>
 
-    <!------------------------------------------ Patrocinios e Suporte ---------------------------------------------------------------------------------->
-
-    <section id="registration" class="px-4 sm:px-6 lg:px-8 py-8 md:py-12">
-        <div class="flex z-10 container mx-auto px-6 md:px-50 py-10 grid items-center gap-8 ">
-            <h1 style="color: #001BB7;" class="text-4xl mt-10 md:text-6xl font-bold leading-tight text-center">
-              Registration
-            </h1>
-            <hr class="border-t border-blue-900">
-            <p class="flex text-lg text-black">
-                Thanks for the interest in participating in our Summer School! As we have a limited number of seats, participantes should first register.
-            </p>
-        </div>
-
-        <div class="flex container mx-auto px-6 grid gap-4">
-            <h1 style="color: #001BB7;" class="text-3xl mt-4 md:text-4xl font-bold leading-tight">
-              Fees
-            </h1>
-            <hr class="border-t border-blue-900">
+    <section id="local" class="relative bg-cover bg-center mt-12 md:px-20 py-10">
+        <div class="container mx-auto grid md:grid-cols-2 items-start gap-10 px-6 py-12">
+            <div class="md:pr-10">
+                <h2 class="text-4xl md:text-5xl font-bold text-[#001BB7] mb-5">
+                   Accommodation
+                </h2>
             
-            <p class="flex text-xl text-black ">
-              Registration fees are:
+                <!-- Abas -->
+                <div class="flex border-b border-blue-600 mb-8 space-x-8 text-lg font-semibold">
+                    <button onclick="showTab('cidade')" id="tab-cidade" class="pb-2 border-b-4 border-[#001BB7] text-[#000000] hover:text-[#673FBC]">Apartments</button>
+                </div>
+            
+                <div id="tab-content-cidade" class="block">
+                    <p class="text-lg leading-relaxed text-justify">
+                        The University of Brasilia will offer shared apartments exclusively for RoME participants within walking distance of the venue. The shared apartments will be able to accommodate up to 15 people, who will be allocated according to the order in which they are requested. We therefore recommend that you apply as soon as possible to secure your spot, together with your registration receipt.<br><br>
 
-                <div class="mb-12">
-                    <div class="overflow-x-auto">
-                    <table class="text-xs sm:text-sm mt-4 mx-auto">
-                            <thead class="bg-[#001BB7] text-white">
-                            <tr>
-                                <th class="px-2 sm:px-4 py-2 border border-gray-400"></th>
-                                <th class="px-2 sm:px-4 py-2 border border-gray-400">Early Registration</th>
-                                <th class="px-2 sm:px-4 py-2 border border-gray-400">Late Registration</th>   
-                            </tr>
-                            </thead>
-                            <tbody class="bg-white">
-                            <tr class="border border-gray-400">
-                                <td class="px-2 sm:px-4 py-2 border border-gray-400">Undergradute students*</td>
-                                <td class="px-2 sm:px-4 py-2 border border-gray-400">BRL</td>
-                                <td class="px-2 sm:px-4 py-2 border border-gray-400">BRL</td>
-                            </tr>
-                            <tr class="border border-gray-400">
-                                <td class="px-2 sm:px-4 py-2 border border-gray-400">Graduate students*</td>
-                                <td class="px-2 sm:px-4 py-2 border border-gray-400">BRL</td>
-                                <td class="px-2 sm:px-4 py-2 border border-gray-400">BRL</td>
-                            </tr>
-                            </tbody>
-                    </table>
-                    </div>  
-                </div>    
-
-                <ul class="list-disc ml-6 space-y-1 text-black text-lg">
-                    <li>* Students from the following Universities have 25% discount in the registration fee: Universidad de Buenos Aires (UBA), Universidade Estadual do Ceará (UECE) and Universidade de Brasília (UNB).</li>
-                    <li>** Needy students (alunos carentes) are not charged registration fee. However, they must also register to the event in the provided link above. A declaration from the University must be uploaded in the registration system.</li>
-                    <li>*** For all students: you must upload in the registration system an official document from the University that you are currently a regular student or an official transcript file/school records.</li>
-                </ul>
-          </div>
-  
-          <div class="flex container mx-auto px-6 grid mt-10 gap-4">
-            <h1 style="color: #001BB7;" class="text-3xl mt-4 md:text-4xl font-bold leading-tight">
-              What is included
-            </h1>
-            <hr class="border-t border-blue-900">
-              <ul class="list-disc ml-6 space-y-1 text-black text-xl">
-                <li>Access to the event</li>
-                <li>A participant kit with bag, water squeeze and T-shirt *</li>
-                <li>Coffee break</li>
-                <li>Certificate</li>
-              </ul>
-          </div>
-
-          <div class="flex container mx-auto px-6 grid mt-10 gap-4">
-            <h2 style="color: #001BB7;" class="text-3xl mt-4 md:text-4xl font-bold leading-tight">
-                Registration link
-            </h2>
-            <hr class="border-t border-blue-900">
-            <div class="flex justify-center gap-4 my-4">
-              <a href="" target="_blank" class="mt-10 inline-block bg-[#1C6EA4] hover:bg-[#001BB7] text-white px-8 py-4 rounded-xl font-semibold text-lg transition">
-                Make your registration here!
-              </a>
+                        An important note: The accommodation is free of charge for the five days of RoME. If you wish to extend your stay, the additional daily rate will be BRL 49.00 per day. Please, make sure you bring your own bed linen, towels, toiletries as these items are not provided by the University of Brasilia.<br><br>
+                        
+                        To apply for a reservation, please fill out the form available at this link. <br><br>
+                        
+                        We are happy to answer any questions and look forward to welcoming you on this very special venue! <br>
+                        
+                        </p>
+                </div>
             </div>
-          </div>
-  
-
+        
+            <div class="relative w-full">
+                <!-- Carrossel -->
+                <div id="carousel-container" class="aspect-square h-full rounded-2xl overflow-hidden shadow-lg">
+                    <img id="carousel-image" src="assets/apartamento/sala.jpeg" class="w-full h-full object-cover transition duration-500" />
+                    <button onclick="prevImage()" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 text-white px-3 py-1 rounded-r">‹</button>
+                    <button onclick="nextImage()" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 text-white px-3 py-1 rounded-l">›</button>
+                </div>
+            </div>
+        </div>
     </section>
-
-    <!------------------------------------------ Footer ---------------------------------------------------------------------------------->
 
     <footer id="contato" class="bg-[#11324D] text-gray-200 py-10 w-full h-full">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-center md:justify-between items-center gap-10">
@@ -242,16 +194,28 @@
         </div>
     </footer>
         
+   
+   <!-- carrosel das fotos -->
+   <script>
+        const images = ['assets/apartamento/sala.jpeg', 'assets/apartamento/sala2.jpeg', 'assets/apartamento/sacada.jpeg', 'assets/apartamento/sacada2.jpeg', 
+                        'assets/apartamento/cozinha.jpeg', 'assets/apartamento/cozinha2.jpeg', 'assets/apartamento/banheiro.jpeg', 'assets/apartamento/quarto.jpeg', 'assets/apartamento/quarto2.jpeg'];
+        let currentIndex = 0;
 
-    <!-- Menu resposivo -->
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navList = document.querySelector('nav ul');
+        function showImage(index) {
+            document.getElementById("carousel-image").src = images[index];
+        }
 
-        menuToggle.addEventListener('click', () => {
-            navList.classList.toggle('show');
-        });
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage(currentIndex);
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        }
     </script>
-    </body>
+
+</body>
 
 </html>

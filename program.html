@@ -101,31 +101,34 @@
     </style>
 </head>
 
-<body class= "bg-gradient-to-b bg-[#FEFFC4] text-gray-900 min-h-screen flex flex-col antialiased">
+<body class= "bg-gradient-to-b bg-[#E7E0C9] text-gray-900 min-h-screen flex flex-col antialiased">
     
-    <nav class="fixed top-0 left-0 w-full z-50 bg-[#0046FF] bg-opacity-60 text-white py-4 px-6 flex justify-between items-center">
-        <div class="text-xl font-bold">
-            <a href="index.html" class="hover:text-blue-900 transition font-bold">RoME26</a>
-        
-        </div>
-        <div class="menu-toggle md:hidden text-white text-2xl mr-4">
-            ☰
-        </div>
-        <ul class="hidden md:flex flex-col md:flex-row gap-4 text-white text-lg font-medium menu-list">
-            <li><a href="index.html" class="hover:text-blue-900 transition font-bold">Home</a></li>  
-            <li><a href="#keynote" class="hover:text-blue-900 transition font-bold">Keynote Speaker</a></li>  
-            <li><a href="#local" class="hover:text-blue-900 transition font-bold">Location</a></li>
-            <li><a href="program.html" class="hover:text-blue-900 transition font-bold">Program</a></li>
-            <li><a href="registration.html" class="hover:text-blue-900 transition font-bold">Registration</a></li>  <!--EDITAR HREF-->
-            <li><a href="mailto:" class="hover:text-blue-900 transition font-bold">Contact</a></li>
-        </ul>
-          
-    </nav>
+  <nav class="fixed top-0 left-0 w-full z-50 bg-[#6B7AA1] bg-opacity-80 text-white py-4 px-6 flex justify-between items-center">
+    <div class="text-xl font-bold">
+        <a href="index.html" class="hover:text-blue-900 transition font-bold">RoME 2026</a>
+    
+    </div>
+    <div class="menu-toggle md:hidden text-white text-2xl mr-4">
+        ☰
+    </div>
+    <ul class="hidden md:flex flex-col md:flex-row gap-4 text-white text-lg font-medium menu-list">
+        <li><a href="index.html" class="hover:text-blue-900 transition font-bold">Home</a></li>  
+        <li><a href="#keynote" class="hover:text-blue-900 transition font-bold">Keynote Speaker</a></li>  
+        <li><a href="program.html" class="hover:text-blue-900 transition font-bold">Schedule</a></li>
+        <li><a href="registration.html" class="hover:text-blue-900 transition font-bold">Registration</a></li>  <!--EDITAR HREF-->            
+        <li><a href="accommodation.html" class="hover:text-blue-900 transition font-bold">Accommodation</a></li>            
+        <li><a href="#steering" class="hover:text-blue-900 transition font-bold">Steering</a></li>  
+        <li><a href="fotos.html" class="hover:text-blue-900 transition font-bold">Photos</a></li>  
+        <li><a href="anterior.html" class="hover:text-blue-900 transition font-bold">Previous Editions </a></li> 
+    </ul>
+      
+</nav>
+
 
     <section>
         <div class="flex z-10 container mx-auto px-6 md:px-50 py-10 grid items-center gap-8 ">
             <h1 style="color: #001BB7;" class="text-4xl mt-20 md:text-6xl font-bold leading-tight text-center">
-                Program
+              Schedule
             </h1>
             <hr class="border-t border-blue-900">
         </div>
@@ -139,7 +142,7 @@
               id="tab-program" 
               class="pb-2 px-2 sm:px-0 whitespace-nowrap text-[#000000] hover:text-[#001BB7] transition-colors"
             >
-              Program
+              Schedule
             </button>
             <button 
               onclick="showTab('workingsession')" 
@@ -156,7 +159,7 @@
               <div class="w-full flex flex-col space-y-10">
                
                 <!-- Card Begin-->
-                <div class="bg-gray-100 rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
+                <div class="bg-[#BED7DC] rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
                   <div class="flex-1 text-center md:text-left">
                     <h3 style="color: #001BB7;" class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Name of the Working Sessions</h3>
                     <h4 style="color: #001BB7;" class="text-xl md:text-xl font-bold text-[#673FBC] mb-2">Students</h4>
@@ -171,7 +174,10 @@
 
 <!----------- PROGRAMAÇÃO ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
             <div id="tab-content-program" class="hidden w-full mt-8 px-2 sm:px-4">
-              <p class="text-xl sm:text-2xl md:text-3xl text-center mb-6 font-semibold">Confira a programação completa do evento:</p>
+              <h3 style="color: #001BB7;" class="text-4xl md:text-6xl font-bold leading-tight text-center">
+                Soon...
+              </h3>
+              <!-- <p class="text-xl sm:text-2xl md:text-3xl text-center mb-6 font-semibold">Confira a programação completa do evento:</p> -->
 <!-- 
               <div class="flex justify-center mb-4"> 
                   <a href="https://drive.google.com/file/d/1kuFi_hrypozFLKWY6RUICxxWT2iMzRv_/view?usp=drive_link" target="_blank" class="flex justify-center text-center items-center mb-4 bg-purple-600 hover:bg-purple-500 text-white px-20 py-10 h-20 rounded-xl font-semibold text-lg transition">
@@ -180,7 +186,7 @@
               </div> -->
             
               <!-- Dia 1 -->
-               <div class="mb-12">
+               <!-- <div class="mb-12">
                       <h3 class="text-xl sm:text-2xl text-center font-bold text-[#673FBC]">Dia 1 - 29/07</h3>
                       <h4 class="text-sm sm:text-base text-center font-bold mt-2 sm:mt-4 px-2">Apresentação de atividades para atração de mulheres para as áreas de STEM em diferentes países da América Latina (AL)</h4>
                       <div class="overflow-x-auto">
@@ -211,131 +217,18 @@
                               </td>
                               <td class="px-2 sm:px-4 py-2 border border-gray-400">Auditório - Bunga Zinnia</td>
                             </tr>
-                            <tr class="border border-gray-400 bg-green-200">
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">10h30 - 11h</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Coffee-break</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400"></td>                              
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Hall superior - Hibisco Amarelo</td>
-                            </tr>
-                            <tr class="border border-gray-400">
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">11h - 12h30</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Compartilhamento de experiências nos países da América Latina</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">
-                                Profa. Donna Roper (Panamá)<br>
-                                Profa. Marisol Flores Garrido (México)<br>
-                                Profa. Gabriela Marin (Costa Rica)<br>                                
-                                Moderadora: Profa. Silvia Alcanfôr (UCB)
-                              </td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Auditório - Bunga Zinnia</td>
-                            </tr>
-                            <tr class="border border-gray-400 bg-green-200">
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">12h30 - 13h45</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Almoço</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400"></td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400"></td>
-                            </tr>
-                            <tr class="border border-gray-400 bg-orange-300">
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">13h45 - 15h00</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Abertura Oficial</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Profa. Maristela Holanda (Coordenadora Geral do evento)<br>
-                                                                                  Reitora Profa. Rozana Reigota Naves (UnB)<br>
-                                                                                  Profa. Kadidja Valéria Reginaldo de Oliveira, representando o Reitor
-                                                                                  Prof. Rafael Lopes (CEUB)<br>
-                                                                                  Pró-Reitora de Graduação e Extensão, Profa. Roberta Carolina Lima
-                                                                                  Gontijo de Lacerda, representando o Reitor do IESB <br>
-                                                                                  Reitora Profa. Veruska Ribeiro Machado (IFB) <br>
-                                                                                  Reitor Prof. Carlos Longo (UCB) <br>
-                                                                                  Reitor Prof. André Leão (UDF) <br>
-                                                                                  Reitora Profa. Simone Benck (UnDF) <br>
-                                                                                  Secretária Giselle Ferreira de Oliveira, Secretária da Secretaria de Estado
-                                                                                  da Mulher do Distrito Federal (SMDF) <br>
-                                                                                  Diretor Leonardo Reisman, Diretor-Presidente da Fundação de Apoio à
-                                                                                  Pesquisa do Distrito Federal (FAP DF)</td>                              
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Auditório - Bunga Zinnia</td>
-                            </tr>
-                            <tr class="border border-gray-400">
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">15h00 - 15h40</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Painel sobre ações para inclusão de mulheres em STEM</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Jaqueline Mesquita (Presidente da SBM)<br>
-                                                                                  Aleteia Araújo (Representante da Presidência da SBC)<br>
-                                                                                  Larissa Carlos de Oliveira Santos (Centro de Gravitação e Cosmologia,
-                                                                                  Universidade de Yangzhou, China) <br>
-                                                                                  Moderadora: Profa. Giovanna Tedesco (IFB/MEC)</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Auditório - Bunga Zinnia</td>
-                            </tr>
-                            <tr class="border border-gray-400 bg-green-200">
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">15h40 - 16h00</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Coffee-break ePôsteres dos projetos de extensão</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400"></td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Hall Superior - Hibisco Amarelo</td>
-                            </tr>
-                            <tr class="border border-gray-400">
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">16h00 - 16h50</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Painel sobre ações para inclusão de mulheres no ensino superior em Instituições de Ensino do  DF </td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Profa. Janaina Soares de Oliveira Alves (Decana de Extensão da UnB) <br>
-                                                                                  Profa. Kadidja Valéria Reginaldo de Oliveira (CEUB)<br>
-                                                                                  Profa. Letícia Toledo Maia Zoby (IESB)<br>
-                                                                                  Profa Giovanna Megumi Ishida Tedesco (IFB)<br>
-                                                                                  Profa Janete Cardoso dos Santos (UDF)<br>
-                                                                                  Profa. Silvia Kely de Barros Alcanfor (Pró-reitora Acadêmica na
-                                                                                  Universidade Católica de Brasília da UCB)<br>
-                                                                                  Profa. Enam Lima Pires (Coordenadora do Centro Interdisciplinar de
-                                                                                  Engenharias, Tecnologia e Inovação da UnDF)<br>
-                                                                                  Moderadora: Profa. Maria Emilia Walter (CIC/UnB)</td>                                                                                  
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Auditório - Bunga Zinnia</td>
-                            </tr>
-                            <tr class="border border-gray-400">
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">16h50 - 17h10</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Painel sobre Segurança Cibernética e Mulheres</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Delegada Regilene Siqueira Rozal (SSP/DF) <br>
-                                                                                  Moderadora: Profa. Kadidja Oliveira (CEUB)</td>
-                            <td class="px-2 sm:px-4 py-2 border border-gray-400">Auditório - Bunga Zinnia</td>
-                            </tr>                            
-                            <tr class="border border-gray-400">
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">17h10 - 17h30</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Algoritmos e preconceito: Desigualdade de Genêro na Era da Inteligência Artificial</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Sra. Marcela Sousa<br>
-                                                                                  Moderadora: Profa. Janete Cardoso (UDF)
-                              </td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Auditório - Bunga Zinnia</td>
-                            </tr>
-                            <tr class="border border-gray-400">
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">17h30 - 17h50</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Painel sobre Inteligência Artificial (IA) no Governo Federal</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Dra. Thaciana Cerqueira (Ministério da Gestão e da Inovação em Serviços Públicos - MGI) <br>
-                                                                                    Moderadora: Profa. Janete Cardoso (UDF)</td>
-                            
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Auditório - Bunga Zinnia</td>
-                            </tr>
-                            <tr class="border border-gray-400">
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">17h50 - 18h20</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Perguntas para as painelistas</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400"></td>                              
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Auditório - Bunga Zinnia</td>
-                            </tr>
-                            <tr class="border border-gray-400">
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">18h20 - 18h30</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Entrega de brindes e Sorteios de camisetas</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400"></td>                              
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Auditório - Bunga Zinnia</td>
-                            </tr>
-                            <tr class="border border-gray-400 bg-green-200">
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">18h30 - 20h00</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Coquetel de confraternização</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400"></td>    
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400">Hall inferior - Bouvardia</td>
-                            </tr>
                           </tbody>
                         </table>
                     </div>  
                   </div>
-              
+               -->
 
         </div>
     </section> 
 
         
-    <br><br>
+    <!------------------------------------------ Footer ---------------------------------------------------------------------------------->
+
     <footer id="contato" class="bg-gray-800 text-gray-200 py-10 w-full h-full">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-center md:justify-between items-center gap-10">
         
@@ -346,8 +239,8 @@
         
             <!-- Coluna 2: Redes Sociais -->
             <div class="flex flex-col items-center">
-                <h2 class="text-xl font-semibold mb-4">Forth Summer School on Robotic Mission Engineering</h2>
-                <h3 class="text-xl font-semibold mb-4">February 23 - 27 </h3>
+                <h2 class="text-xl font-semibold mb-4">Fourth Summer School on Robotic Mission Engineering</h2>
+                <h3 class="text-xl font-semibold mb-4">February 23 - 27 / 2026  • Brasilia/DF </h3>
             </div>
 
             <!-- Coluna 3: Contato EDITAR -->

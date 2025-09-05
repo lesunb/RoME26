@@ -7,102 +7,10 @@
     <link rel="icon" type="image/png" href="assets/robo.png"/>   
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">  
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-
-        @media (max-width: 1024px) {
-        nav ul {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 1rem;
-            background-color: rgba(75, 85, 99, 0.95);
-            padding: 1rem;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            display: none;
-        }
-
-        nav ul.show {
-            display: flex;
-        }
-
-        nav .menu-toggle {
-            display: block;
-            cursor: pointer;
-        }
-
-        nav ul li {
-            width: 100%;
-        }
-    }
-
-    @media (max-width: 768px) {
-        #continenteZoom {
-            width: 100%;
-            scale: 1.1 !important;
-        }
-
-        .text-5xl {
-            font-size: 2.25rem;
-        }
-
-        .text-4xl {
-            font-size: 2rem;
-        }
-
-        .text-3xl {
-            font-size: 1.75rem;
-        }
-
-        .text-2xl {
-            font-size: 1.5rem;
-        }
-
-        .text-xl {
-            font-size: 1.25rem;
-        }
-
-        .text-lg {
-            font-size: 1rem;
-        }
-
-        .text-base {
-            font-size: 0.875rem;
-        }
-
-        .gap-44 {
-            gap: 2rem !important;
-        }
-
-        .gap-24 {
-            gap: 1.5rem !important;
-        }
-
-        .w-50 {
-            width: 60% !important;
-        }
-
-        .h-10 {
-            height: auto !important;
-        }
-
-        .h-22, .h-16, .h-12 {
-            height: auto !important;
-        }
-
-        .md\\:px-20 {
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-    }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="bg-gradient-to-b bg-[#E7E0C9] text-gray-900 min-h-screen flex flex-col antialiased">
+<body class="bg-gradient-to-b bg-[#adadcd] text-gray-900 min-h-screen flex flex-col antialiased">
     
     <!------------------------------------------ Barra ---------------------------------------------------------------------------------->
 
@@ -116,10 +24,10 @@
         </div>
         <ul class="hidden md:flex flex-col md:flex-row gap-4 text-white text-lg font-medium menu-list">
             <li><a href="index.html" class="hover:text-blue-900 transition font-bold">Home</a></li>  
-            <!-- <li><a href="#keynote" class="hover:text-blue-900 transition font-bold">Keynote Speaker</a></li>   -->
+            <li><a href="#keynote" class="hover:text-blue-900 transition font-bold">Keynote Speaker</a></li>  
             <li><a href="program.html" class="hover:text-blue-900 transition font-bold">Schedule</a></li>
             <li><a href="registration.html" class="hover:text-blue-900 transition font-bold">Registration</a></li>  <!--EDITAR HREF-->            
-            <li><a href="accommodation.html" class="hover:text-blue-900 transition font-bold">Accommodation</a></li>            
+            <!-- <li><a href="accommodation.html" class="hover:text-blue-900 transition font-bold">Accommodation</a></li>             -->
             <li><a href="steering.html" class="hover:text-blue-900 transition font-bold">Steering</a></li>  
             <!-- <li><a href="fotos.html" class="hover:text-blue-900 transition font-bold">Photos</a></li>   -->
             <li><a href="anterior.html" class="hover:text-blue-900 transition font-bold">Previous Editions </a></li> 
@@ -129,33 +37,25 @@
 
     <!------------------------------------------ BAnner ---------------------------------------------------------------------------------->
 
-    <section id="index" class="relative bg-[url('assets/Monumento.png')] ">
+    <section id="index" class="bg-[url('assets/skyline.png')] bg-[#738186] bg-no-repeat bg-bottom min-h-screen flex items-start pt-20">
         <div class="absolute inset-0 bg-blue-100/20"></div>
       
-        <div class="relative z-10 container mx-auto md:px-20 py-16 grid md:grid-cols-2 items-center justify-center text-center md:text-left gap-8">
+        <div class="relative mx-auto items-center justify-center text-center grid flex-col-3 py-16">
           <!-- Texto -->
           <div class="md:pr-10">
             <h1 class="text-5xl md:text-6xl xl:text-6xl font-bold leading-tight">
               <a style="color: #001BB7;">Fourth Summer School on <br> Robotic Mission Engineering </a><br>
             </h1>
             <h2 class="mt-6">
-              <a  class="text-2xl md:text-3xl font-bold">February 23 - 27 / 2026 • Brasilia/DF </a>
+              <a class="text-2xl md:text-3xl font-bold">February 23 - 27 / 2026 • Brasilia/DF </a>
             </h2>
-            <a class="mt-10 inline-block bg-[#1C6EA4] hover:bg-[#001BB7] text-white px-8 py-4 rounded-xl font-semibold text-lg transition">
-              Registration open!  <!--EDITAR HREF-->
+            <a href="https://www.even3.com.br/fourth-summer-school-on-robotic-mission-engineering-rome-2026-624910/" class="mt-10 inline-block bg-[#1C6EA4] hover:bg-[#001BB7] text-white px-8 py-4 rounded-xl font-semibold text-lg transition">
+              Registration open!
             </a>
-          </div>      
-
-            <!-- Imagem -->
-            <div class="flex justify-center mt-20 md:mt-45">
-                <img id="continenteZoom"
-                    src="assets/JkRoME.png"
-                    alt="Logo do RoME 26"
-                    class="max-w-full w-[120%] md:w-[140%] xl:w-[180%] scale-90 md:scale-125 transition-transform duration-300">
-            </div>
-    
+          </div>
         </div>
       </section>
+      
       
     <!------------------------------------------ About ---------------------------------------------------------------------------------->
 
@@ -188,71 +88,90 @@
 
     <!------------------------------------------ Keynote Spekaers ---------------------------------------------------------------------------------->
 
-    <!-- <section id="keynote" class="relative bg-cover bg-center md:px-20 py-10">
-        <div class="container mx-auto grid md:grid-cols-1 items-center gap-8 ">
+    <section id="keynote" class="relative bg-cover bg-center md:px-20 py-10">
+        <div class="container mx-auto grid md:grid-cols-1 items-center gap-6 ">
             <h2 style="color: #001BB7;" class="text-4xl md:text-5xl font-semibold text-[#673FBC]">
                 <strong>Keynotes Spekaers</strong>
             </h2>
                 <br>
-            <div class="container mx-auto px-6 md:px-10 grid gap-14 md:grid-cols-4">
-                <div class ="bg-[#BED7DC] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+            <div class="container mx-auto px-6 md:px-10 grid gap-16 md:grid-cols-3">
+
+                <div class ="bg-[#BED7DC] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-full text-center align-items-center mx-auto">
                     <img
-                        src="assets/RoMELogo.png"
+                        src="assets/keynote/ana.png"
                         alt="Keynote 1"
                         class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
                     />
                     <h2 style="color: #001BB7;" class="text-lg font-bold leading-tight">
                         Ana Cavalcanti
                     </h2>
-                    <p class="text-black mt-2">Descrição</p>
-                    <a href="https://cic.unb.br/" target="_blank" class="mt-4 inline-block bg-[#1C6EA4] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
-                        Faculdade
-                    </a>
+                    <h3 style="color: #001BB7;" class="text-lg font-bold leading-tight">
+                        University of York, United Kingdom 🇬🇧
+                    </h3>
+                    <p class="text-black mt-2 text-justify">Ana Cavalcanti is a Professor at the University of York, UK, and holds a Royal Academy of Engineering Chair in Emerging Technologies. In that role, she is Director of the RoboStar centre on Software Engineering for Robotics. She previously held a Royal Society Industry Fellowship, which provided her with the ideal opportunity to understand and contribute to the practice of formal methods working with QinetiQ. Her main scientific achievements have been on the design and justification of sound refinement-based program development and verification techniques. She has covered theoretical and practical integration with industry-strength technology: concurrency, object-orientation, and testing, dealing now with mobile and autonomous robots. She has led the development and justification of refinement theories, notations, and techniques, and tools to cope with control systems. Her work provides support for graphical notations popular with engineers, and for main-stream programming languages. It is distinctive in that it has comprehensive coverage of practical languages, rather than idealised notations. It also supports high degrees of automation to enable usability and scalability. She has chaired the Programme Committee of leading conferences, and been a member of numerous Programme Committees. Currently, she is the Chair of the Formal Methods Europe Board. </p>
                 </div>
-                <div class ="bg-[#BED7DC] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+
+                <div class ="bg-[#BED7DC] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-full text-center align-items-center mx-auto">
                     <img
-                    src="assets/RoMELogo.png"
-                    alt="Keynote 1"
-                    class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
-                    />
-                    <h2 style="color: #001BB7;" class="text-lg font-bold leading-tight">
-                        Patrizio Pelliccione
-                    </h2>
-                    <p class="text-black mt-2">Descrição</p>
-                    <a href="https://cic.unb.br/" target="_blank" class="mt-4 inline-block bg-[#1C6EA4] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
-                        Faculdade
-                    </a>
-                </div>
-                <div class ="bg-[#BED7DC] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
-                    <img
-                    src="assets/RoMELogo.png"
+                    src="assets/keynote/Genaina.png"
                     alt="Keynote 1"
                     class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
                     />
                     <h2 style="color: #001BB7;" class="text-lg font-bold leading-tight">
                         Genaína Rodrigues
                     </h2>
-                    <p class="text-black mt-2">Descrição</p>
-                    <a href="https://cic.unb.br/" target="_blank" class="mt-4 inline-block bg-[#1C6EA4] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
-                        Faculdade
-                    </a>
+                    <h3 style="color: #001BB7;" class="text-lg font-bold leading-tight">
+                        University of Brasilia, Brazil 🇧🇷
+                    </h3>
+                    <p class="text-black mt-2 text-justify">Genaina Rodrigues is an associate professor in the Department of Computer Science at the University of Brasília. She received her Ph.D. in Computer Science from University College London in 2008. Previously, she obtained her bachelor’s degree in Computer Science from the University of Brasília in 1999 and her Master’s Degree in Computer Science from the Federal University of Pernambuco in 2002. In 2008, she conducted a postdoctoral research in the Computer Science Department at the Federal University of Minas Gerais. Her research interests are mostly in Software Systems Engineering including the mutual collaboration between robotics and software engineering, model checking for design and runtime verification, self-adaptive systems and the interplay with goal-oriented requirements engineering, behavior-driven development and its role in testing. In 2013, she co-organized the Brazilian Software Engineering Congress (CBSoft) of the Brazilian Computer Society (SBC). In 2020, she was awarded a fellowship as an experienced researcher through CAPES/Alexander von Humboldt Programme to conduct research at the Humboldt Universität zu Berlin with Prof. Lars Grunske and PhD Thomas Vogel. </p>
                 </div>
-                <div style="color: #001BB7;" class ="bg-[#BED7DC] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+
+                <div class ="bg-[#BED7DC] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-full text-center align-items-center mx-auto">
                     <img
-                    src="assets/RoMELogo.png"
+                    src="assets/keynote/lina.png"
+                    alt="Keynote 1"
+                    class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
+                    />
+                    <h2 style="color: #001BB7;" class="text-lg font-bold leading-tight">
+                        Lina Marsso
+                    </h2>
+                    <h3 style="color: #001BB7;" class="text-lg font-bold leading-tight">
+                        University of Toronto, Canada 🇨🇦
+                    </h3>
+                    <p class="text-black mt-2 text-justify">Lina Marsso is currently a post-doctoral researcher in the Department of Computer Science at the University of Toronto working with Marsha Chechik. She received her PhD from INRIA Grenoble, France where she was advised by Radu Mateescu and Ioaniss Parissis. Her recent work is in the combination of safety, social, legal, ethical, empathetic, and cultural, verification and analysis of autonomous systems. Lina was organizer and served as PC Chair on the first International Workshop on Dependability and Trustworthiness of Safety-Critical Systems with Machine Learned Components and the sixth International Workshop on Automated and Verifiable Software System Development. Moreover, she served and is serving on the program committee of several conferences, including the 46th International Conference on Software Engineering (ICSE 2024), the 39th IEEE/ACM International Conference on Automated Software Engineering (ASE 2024), the 29th International Conference on Formal Methods for Industrial Critical Systems (FMICS 2024), and the 26th International Conference on Fundamental Approaches to Software Engineering (FASE'2023). </p>
+                </div>
+
+                <div style="color: #001BB7;" class ="bg-[#BED7DC] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-full text-center align-items-center mx-auto">
+                    <img
+                    src="assets/keynote/patrizio.jpg"
+                    alt="Keynote 1"
+                    class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
+                    />
+                    <h2 class="text-lg font-bold leading-tight">
+                        Patrizio Pelliccione
+                    </h2>
+                    <h3 style="color: #001BB7;" class="text-lg font-bold leading-tight">
+                        University of Bergen, Norway 🇳🇴
+                    </h3>
+                    <p class="text-black mt-2 text-justify">Patrizio Pelliccione has an academic and educational background in Software Engineering and Computer Science covering both solution-oriented and knowledge-oriented research. He has been working in different countries and contexts and he has a consolidated experience on National (Italian, Swedish, Luxembourgish) and EU projects. He is very active in the research community and he collaborate with various companies around the world. The three main research areas in which he is working are (i) autonomous, self-adaptive, and smart systems, (ii) robotic Software engineering and (iii) architecting complex system.</p>
+                </div>
+
+                <div style="color: #001BB7;" class ="bg-[#BED7DC] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-full text-center align-items-center mx-auto">
+                    <img
+                    src="assets/keynote/roli.png"
                     alt="Keynote 1"
                     class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
                     />
                     <h2 class="text-lg font-bold leading-tight">
                         Paulo Maia
                     </h2>
-                    <p class="text-black mt-2">Descrição</p>
-                    <a href="https://cic.unb.br/" target="_blank" class="mt-4 inline-block bg-[#1C6EA4] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
-                        Faculdade
-                    </a>
+                    <h3 style="color: #001BB7;" class="text-lg font-bold leading-tight">
+                        Federal University of Rio Grande Do Norte, Brazil 🇧🇷
+                    </h3>
+                    <p class="text-black mt-2 text-justify">Paulo Rolim is currently a PhD student in the Postgraduate Program in Systems and Computing at the Federal University of Rio Grande do Norte, Brazil. He is a member of the RoboStar team and holds a degree in Law from the Potiguar University (2011), a technical-professional course in the Digital Metropolis Technical Course - IMD from the Federal University of Rio Grande do Norte (2019) and a Master's degree in Systems and Computing from the Federal University of Rio Grande do Norte (2023). He has experience in the area of Computer Science, working mainly on the following topics: formal methods, safety-critical systems and railway interlocking systems.</p>
                 </div>
             </div>
-    </section> -->
+    </section>
 
     <!------------------------------------------ Audiência ---------------------------------------------------------------------------------->
 
@@ -349,7 +268,7 @@
             </div> 
 
             <div class="flex justify-center items-center mt-24">     
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.8593208549!2d-47.87162942392899!3d-15.758579622076132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3bb88f71361f%3A0x3933d293e644ad55!2zUHLDqWRpbyBkZSBDacOqbmNpYSBkYSBDb21wdXRhw6fDo28gZSBFc3RhdMOtc3RpY2EgLSBDSUMvRVNU!5e0!3m2!1spt-BR!2sbr!4v1749359698999!5m2!1spt-BR!2sbr" 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.8593208549!2d-47.87162942392899!3d-15.758579622076132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3bb88f71361f%3A0x3933d293e644ad55!2zUHLDqWRpbyBkZSBDacOqbmNpYSBkYSBDb21wdXRhw6fDo28gZSBFc3RhdMOtc3RpY2EgLSBDSUMvRVNU!5e0!3m2!1spt-BR!2sbr!4v1749359698999!5m2!1spt-BR!2sbr&t=k" 
                 width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="w-full"
                 referrerpolicy="no-referrer-when-downgrade">
                  </iframe>
@@ -363,15 +282,15 @@
     <section id="instituicoes" class="px-4 sm:px-6 lg:px-8 py-8 md:py-12">
         
         <!-- Patrocinadores -->
-        <div class="flex flex-col items-center justify-center mb-12 md:mb-16">
+        <!-- <div class="flex flex-col items-center justify-center mb-12 md:mb-16">
             <h2 style="color: #001BB7;" class="text-2xl md:text-3xl lg:text-4xl font-bold text-[#673FBC] mb-8 text-center">
                 SUPPORT
-            </h2>
+            </h2> -->
             <!-- <a href="https://www.fap.df.gov.br/" class="w-full max-w-xs md:max-w-md transition-transform hover:scale-105">
                 <img src="assets/instituicao/fapdf.png" alt="FAPDF" 
                      class="w-full h-auto max-h-24 md:max-h-32 object-contain"/>
             </a> -->
-        </div> 
+        <!-- </div>  -->
     
         <!-- Apoio -->
         <div class="flex flex-col items-center justify-center mb-12 md:mb-16">
@@ -380,17 +299,14 @@
             </h2>
             
             <!-- Primeira linha de apoio -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-10 w-full max-w-6xl mx-auto">
-                <!-- <a href="https://secti.df.gov.br/" class="flex justify-center items-center h-80 md:h-80 transition-transform hover:scale-105">
-                    <img src="assets/apoio/secti.webp" alt="SECTI" class="w-auto h-full object-contain"/>
-                </a> -->
-            </div>
-            
-            <!-- Segunda linha de apoio -->
-            <div class="grid grid-cols-1 sm:grid-cols-4 gap-6 md:gap-10 w-full max-w-6xl mx-auto mt-8 md:mt-12">
-                <!-- <a href="https://www.instagram.com/rsturismoeventos/" class="flex mt-20 justify-center items-center h-24 md:h-32 transition-transform hover:scale-105">
-                    <img src="assets/instituicao/rs.png" alt="Grupo RS Turismo" class="w-auto h-full object-contain"/>
-                </a> -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-10 w-full max-w-xl mx-auto">
+                <a href="https://www.acm.org/" class="flex justify-center items-center h-80 md:h-40 transition-transform hover:scale-105">
+                    <img src="assets/sponsors/acm.png" alt="ACM" class="w-auto h-full object-contain"/>
+                </a>
+
+                <a href="https://www.unb.br/" class="flex justify-center items-center h-80 md:h-40 transition-transform hover:scale-105">
+                    <img src="assets/sponsors/unb.png" alt="ACM" class="w-auto h-full object-contain"/>
+                </a>
             </div>
         </div> 
 
@@ -415,7 +331,7 @@
             <!-- Coluna 3: Contato EDITAR -->
             <div class="flex flex-col items-center md:items-start">
                 <h2 class="text-xl font-semibold mb-4">CONTACT</h2>
-                <p class="text-sm mb-1">Email: <a href="mailto:" class="underline hover:text-purple-500">contato@contado.com</a></p>
+                <p class="text-sm mb-1">Email: <a href="mailto:romesummerschool@gmail.com" class="underline hover:text-purple-500">romesummerschool@gmail.com</a></p>
             </div>
         
         </div>

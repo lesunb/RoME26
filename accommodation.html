@@ -7,99 +7,7 @@
     <link rel="icon" type="image/png" href="assets/robo.png"/>  
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">  
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-
-        @media (max-width: 1024px) {
-        nav ul {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 1rem;
-            background-color: rgba(75, 85, 99, 0.95);
-            padding: 1rem;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            display: none;
-        }
-
-        nav ul.show {
-            display: flex;
-        }
-
-        nav .menu-toggle {
-            display: block;
-            cursor: pointer;
-        }
-
-        nav ul li {
-            width: 100%;
-        }
-    }
-
-    @media (max-width: 768px) {
-        #continenteZoom {
-            width: 100%;
-            scale: 1.1 !important;
-        }
-
-        .text-5xl {
-            font-size: 2.25rem;
-        }
-
-        .text-4xl {
-            font-size: 2rem;
-        }
-
-        .text-3xl {
-            font-size: 1.75rem;
-        }
-
-        .text-2xl {
-            font-size: 1.5rem;
-        }
-
-        .text-xl {
-            font-size: 1.25rem;
-        }
-
-        .text-lg {
-            font-size: 1rem;
-        }
-
-        .text-base {
-            font-size: 0.875rem;
-        }
-
-        .gap-44 {
-            gap: 2rem !important;
-        }
-
-        .gap-24 {
-            gap: 1.5rem !important;
-        }
-
-        .w-50 {
-            width: 60% !important;
-        }
-
-        .h-10 {
-            height: auto !important;
-        }
-
-        .h-22, .h-16, .h-12 {
-            height: auto !important;
-        }
-
-        .md\\:px-20 {
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-    }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="bg-gradient-to-b bg-[#E7E0C9] text-gray-900 min-h-screen flex flex-col antialiased">
@@ -116,7 +24,7 @@
         </div>
         <ul class="hidden md:flex flex-col md:flex-row gap-4 text-white text-lg font-medium menu-list">
             <li><a href="index.html" class="hover:text-blue-900 transition font-bold">Home</a></li>  
-            <!-- <li><a href="#keynote" class="hover:text-blue-900 transition font-bold">Keynote Speaker</a></li>   -->
+            <li><a href="index.html#keynote" class="hover:text-blue-900 transition font-bold">Keynote Speaker</a></li>  
             <li><a href="program.html" class="hover:text-blue-900 transition font-bold">Schedule</a></li>
             <li><a href="registration.html" class="hover:text-blue-900 transition font-bold">Registration</a></li>  <!--EDITAR HREF-->            
             <li><a href="accommodation.html" class="hover:text-blue-900 transition font-bold">Accommodation</a></li>            

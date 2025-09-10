@@ -40,18 +40,28 @@
     <section id="index" class="bg-[url('assets/skyline.png')] bg-[#738186] bg-no-repeat bg-bottom min-h-screen flex items-start pt-20">
         <div class="absolute inset-0 bg-blue-100/20"></div>
       
-        <div class="relative mx-auto items-center justify-center text-center grid flex-col-3 py-16">
+        <div class="relative z-10 container mx-auto md:px-20 py-16 grid md:grid-cols-2 items-center justify-center text-center md:text-left gap-8">
           <!-- Texto -->
           <div class="md:pr-10">
-            <h1 class="text-5xl md:text-6xl xl:text-6xl font-bold leading-tight">
-              <a style="color: #001BB7;">Fourth Summer School on <br> Robotic Mission Engineering </a><br>
-            </h1>
+            <h1 class="text-6xl font-bold leading-tight">
+                <a style="color: #001BB7;">RoME 2026 </a><br>
+              </h1>
+            <h2 class="text-4xl font-bold leading-tight">
+              <a style="color: #001BB7;">Fourth Summer School on Robotic Mission Engineering </a><br>
+            </h2>
             <h2 class="mt-6">
-              <a class="text-2xl md:text-3xl font-bold">February 23 - 27 / 2026 • Brasilia/DF </a>
+              <a class="text-2xl font-bold">February 23 - 27 / 2026 • Brasilia/DF </a>
             </h2>
             <a href="https://www.even3.com.br/fourth-summer-school-on-robotic-mission-engineering-rome-2026-624910/" class="mt-10 inline-block bg-[#1C6EA4] hover:bg-[#001BB7] text-white px-8 py-4 rounded-xl font-semibold text-lg transition">
               Registration open!
             </a>
+          </div>
+
+          <!-- Imagem -->
+          <div class="flex justify-center">
+            <img src="assets/robo.png"
+              alt="Robô"
+              class=" max-w-md transition-transform duration-500 hover:scale-110">
           </div>
         </div>
       </section>
@@ -59,30 +69,17 @@
       
     <!------------------------------------------ About ---------------------------------------------------------------------------------->
 
-    <section id="sobre" class="relative bg-cover bg-center mt-8 md:px-20">
-        <div class="container mx-auto grid md:grid-cols-2 items-center gap-8 px-6 py-12">
-            <div class="md:pr-10"><br>
-                <p class="text-2xl font-bold mt-2">About the event</p>
-                <h2 style="color: #001BB7;"  class="text-4xl md:text-5xl font-semibold text-[#673FBC]">
-                    <strong>What is RoME?</strong>
-                </h2>
-                <br>
-                <p class="text-lg mt-2 text-justify">
-                    The International Summer School on Robotic Mission Engineering (RoME) aims to promote the engineering of missions of robotic applications through systematic approaches of Software Engineering. 
-                    This year, RoME is funded by ACM Sigsoft. In its fourth edition, we will have five days event full of presentations, working sessions, lots of discussions and opportunities to engage on very interesting research topics.
-                    The expected outcomes of this summer school are to:<br>                    
-                    (i) promote the dissemination of scientific research and its practical application regarding the engineering of autonomous robotic missions through systematic approaches to Software Engineering; <br>
-                    (ii) promote technological innovation with the research community in robotic and in Software Engineering. <br>
-                    (iii) attract students to contribute to the development of the proposed research and <br>                    
-                    (iv) foster research collaboration between international academic centers of excellence!
-                </p>
-
-            </div> 
-
-            <div class="flex justify-center items-center mt-24">     
-                <img src="assets/about.png" alt="Robô" 
-                class="transition-transform duration-500 hover:scale-110">
-            </div>
+    <section id="sobre" class="relative bg-cover bg-center mt-24 md:px-20 ">
+        <div class="container mx-auto grid md:grid-cols-1 items-center gap-2 ">            
+            <p class="text-2xl font-bold mt-2">About the event</p>
+            <h2 style="color: #001BB7;"  class="text-4xl md:text-5xl font-semibold text-[#673FBC]">
+                <strong>What is RoME?</strong>
+            </h2>
+            <p class="text-lg text-justify mt-6">
+                The International Summer School on Robotic Mission Engineering (RoME) is dedicated to advancing the engineering of robotic missions through systematic approaches drawn from Software Engineering. In 2025, RoME proudly celebrates its fourth edition with the support of ACM SIGSOFT.<br>
+                Over the course of five days, participants will take part in a dynamic program of presentations, interactive working sessions, and engaging discussions with internationally renowned speakers, who have been a hallmark of RoME since its first edition. This year introduces an exciting new highlight: the very first RoME Robotic Competition, where participants will collaborate to design and execute missions in Turtebots.<br>
+                RoME 2025 promises an inspiring environment to learn, collaborate, and innovate at the forefront of robotics research.              
+            </p>        
         </div>
     </section>
 
@@ -111,6 +108,51 @@
                     <p class="text-black mt-2 text-justify">Ana Cavalcanti is a Professor at the University of York, UK, and holds a Royal Academy of Engineering Chair in Emerging Technologies. In that role, she is Director of the RoboStar centre on Software Engineering for Robotics. She previously held a Royal Society Industry Fellowship, which provided her with the ideal opportunity to understand and contribute to the practice of formal methods working with QinetiQ. Her main scientific achievements have been on the design and justification of sound refinement-based program development and verification techniques. She has covered theoretical and practical integration with industry-strength technology: concurrency, object-orientation, and testing, dealing now with mobile and autonomous robots. She has led the development and justification of refinement theories, notations, and techniques, and tools to cope with control systems. Her work provides support for graphical notations popular with engineers, and for main-stream programming languages. It is distinctive in that it has comprehensive coverage of practical languages, rather than idealised notations. It also supports high degrees of automation to enable usability and scalability. She has chaired the Programme Committee of leading conferences, and been a member of numerous Programme Committees. Currently, she is the Chair of the Formal Methods Europe Board. </p>
                 </div>
 
+                <div style="color: #001BB7;" class ="bg-[#BED7DC] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-full text-center align-items-center mx-auto">
+                    <img
+                    src="assets/keynote/roli.png"
+                    alt="Keynote 1"
+                    class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
+                    />
+                    <h2 class="text-lg font-bold leading-tight">
+                        Paulo Maia
+                    </h2>
+                    <h3 style="color: #001BB7;" class="text-lg font-bold leading-tight">
+                        Federal University of Rio Grande Do Norte, Brazil 🇧🇷
+                    </h3>
+                    <p class="text-black mt-2 text-justify">Paulo Rolim is currently a PhD student in the Postgraduate Program in Systems and Computing at the Federal University of Rio Grande do Norte, Brazil. He is a member of the RoboStar team and holds a degree in Law from the Potiguar University (2011), a technical-professional course in the Digital Metropolis Technical Course - IMD from the Federal University of Rio Grande do Norte (2019) and a Master's degree in Systems and Computing from the Federal University of Rio Grande do Norte (2023). He has experience in the area of Computer Science, working mainly on the following topics: formal methods, safety-critical systems and railway interlocking systems.</p>
+                </div>
+
+                <div class ="bg-[#BED7DC] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-full text-center align-items-center mx-auto">
+                    <img
+                    src="assets/keynote/lina.png"
+                    alt="Keynote 1"
+                    class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
+                    />
+                    <h2 style="color: #001BB7;" class="text-lg font-bold leading-tight">
+                        Lina Marsso
+                    </h2>
+                    <h3 style="color: #001BB7;" class="text-lg font-bold leading-tight">
+                        Polytechinique Montréal, Canada 🇨🇦
+                    </h3>
+                    <p class="text-black mt-2 text-justify">Lina Marsso is currently a post-doctoral researcher in the Department of Computer Science at the University of Toronto working with Marsha Chechik. She received her PhD from INRIA Grenoble, France where she was advised by Radu Mateescu and Ioaniss Parissis. Her recent work is in the combination of safety, social, legal, ethical, empathetic, and cultural, verification and analysis of autonomous systems. Lina was organizer and served as PC Chair on the first International Workshop on Dependability and Trustworthiness of Safety-Critical Systems with Machine Learned Components and the sixth International Workshop on Automated and Verifiable Software System Development. Moreover, she served and is serving on the program committee of several conferences, including the 46th International Conference on Software Engineering (ICSE 2024), the 39th IEEE/ACM International Conference on Automated Software Engineering (ASE 2024), the 29th International Conference on Formal Methods for Industrial Critical Systems (FMICS 2024), and the 26th International Conference on Fundamental Approaches to Software Engineering (FASE'2023). </p>
+                </div>
+
+                <div style="color: #001BB7;" class ="bg-[#BED7DC] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-full text-center align-items-center mx-auto">
+                    <img
+                    src="assets/keynote/patrizio.jpg"
+                    alt="Keynote 1"
+                    class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
+                    />
+                    <h2 class="text-lg font-bold leading-tight">
+                        Patrizio Pelliccione
+                    </h2>
+                    <h3 style="color: #001BB7;" class="text-lg font-bold leading-tight">
+                        Gran Sasso Science Institute, Italy 🇮🇹
+                    </h3>
+                    <p class="text-black mt-2 text-justify">Patrizio Pelliccione has an academic and educational background in Software Engineering and Computer Science covering both solution-oriented and knowledge-oriented research. He has been working in different countries and contexts and he has a consolidated experience on National (Italian, Swedish, Luxembourgish) and EU projects. He is very active in the research community and he collaborate with various companies around the world. The three main research areas in which he is working are (i) autonomous, self-adaptive, and smart systems, (ii) robotic Software engineering and (iii) architecting complex system.</p>
+                </div>
+
                 <div class ="bg-[#BED7DC] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-full text-center align-items-center mx-auto">
                     <img
                     src="assets/keynote/Genaina.png"
@@ -126,50 +168,6 @@
                     <p class="text-black mt-2 text-justify">Genaina Rodrigues is an associate professor in the Department of Computer Science at the University of Brasília. She received her Ph.D. in Computer Science from University College London in 2008. Previously, she obtained her bachelor’s degree in Computer Science from the University of Brasília in 1999 and her Master’s Degree in Computer Science from the Federal University of Pernambuco in 2002. In 2008, she conducted a postdoctoral research in the Computer Science Department at the Federal University of Minas Gerais. Her research interests are mostly in Software Systems Engineering including the mutual collaboration between robotics and software engineering, model checking for design and runtime verification, self-adaptive systems and the interplay with goal-oriented requirements engineering, behavior-driven development and its role in testing. In 2013, she co-organized the Brazilian Software Engineering Congress (CBSoft) of the Brazilian Computer Society (SBC). In 2020, she was awarded a fellowship as an experienced researcher through CAPES/Alexander von Humboldt Programme to conduct research at the Humboldt Universität zu Berlin with Prof. Lars Grunske and PhD Thomas Vogel. </p>
                 </div>
 
-                <div class ="bg-[#BED7DC] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-full text-center align-items-center mx-auto">
-                    <img
-                    src="assets/keynote/lina.png"
-                    alt="Keynote 1"
-                    class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
-                    />
-                    <h2 style="color: #001BB7;" class="text-lg font-bold leading-tight">
-                        Lina Marsso
-                    </h2>
-                    <h3 style="color: #001BB7;" class="text-lg font-bold leading-tight">
-                        University of Toronto, Canada 🇨🇦
-                    </h3>
-                    <p class="text-black mt-2 text-justify">Lina Marsso is currently a post-doctoral researcher in the Department of Computer Science at the University of Toronto working with Marsha Chechik. She received her PhD from INRIA Grenoble, France where she was advised by Radu Mateescu and Ioaniss Parissis. Her recent work is in the combination of safety, social, legal, ethical, empathetic, and cultural, verification and analysis of autonomous systems. Lina was organizer and served as PC Chair on the first International Workshop on Dependability and Trustworthiness of Safety-Critical Systems with Machine Learned Components and the sixth International Workshop on Automated and Verifiable Software System Development. Moreover, she served and is serving on the program committee of several conferences, including the 46th International Conference on Software Engineering (ICSE 2024), the 39th IEEE/ACM International Conference on Automated Software Engineering (ASE 2024), the 29th International Conference on Formal Methods for Industrial Critical Systems (FMICS 2024), and the 26th International Conference on Fundamental Approaches to Software Engineering (FASE'2023). </p>
-                </div>
-
-                <div style="color: #001BB7;" class ="bg-[#BED7DC] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-full text-center align-items-center mx-auto">
-                    <img
-                    src="assets/keynote/patrizio.jpg"
-                    alt="Keynote 1"
-                    class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
-                    />
-                    <h2 class="text-lg font-bold leading-tight">
-                        Patrizio Pelliccione
-                    </h2>
-                    <h3 style="color: #001BB7;" class="text-lg font-bold leading-tight">
-                        University of Bergen, Norway 🇳🇴
-                    </h3>
-                    <p class="text-black mt-2 text-justify">Patrizio Pelliccione has an academic and educational background in Software Engineering and Computer Science covering both solution-oriented and knowledge-oriented research. He has been working in different countries and contexts and he has a consolidated experience on National (Italian, Swedish, Luxembourgish) and EU projects. He is very active in the research community and he collaborate with various companies around the world. The three main research areas in which he is working are (i) autonomous, self-adaptive, and smart systems, (ii) robotic Software engineering and (iii) architecting complex system.</p>
-                </div>
-
-                <div style="color: #001BB7;" class ="bg-[#BED7DC] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-full text-center align-items-center mx-auto">
-                    <img
-                    src="assets/keynote/roli.png"
-                    alt="Keynote 1"
-                    class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
-                    />
-                    <h2 class="text-lg font-bold leading-tight">
-                        Paulo Maia
-                    </h2>
-                    <h3 style="color: #001BB7;" class="text-lg font-bold leading-tight">
-                        Federal University of Rio Grande Do Norte, Brazil 🇧🇷
-                    </h3>
-                    <p class="text-black mt-2 text-justify">Paulo Rolim is currently a PhD student in the Postgraduate Program in Systems and Computing at the Federal University of Rio Grande do Norte, Brazil. He is a member of the RoboStar team and holds a degree in Law from the Potiguar University (2011), a technical-professional course in the Digital Metropolis Technical Course - IMD from the Federal University of Rio Grande do Norte (2019) and a Master's degree in Systems and Computing from the Federal University of Rio Grande do Norte (2023). He has experience in the area of Computer Science, working mainly on the following topics: formal methods, safety-critical systems and railway interlocking systems.</p>
-                </div>
             </div>
     </section>
 
@@ -202,9 +200,11 @@
                 <br>
                 <p class="text-lg mt-2 text-justify">
                     RoME will sponsor via ACM Sigsoft up to 10 students grants of BRL 2,500 to support travel and registration costs for students coming outside Brasilia.<br>
-                    If you want to apply for a student grant, you should fill <a href="" class="text-blue-900">[this form]</a> provided with your proof of registration.<br>
-                    Student membership for ACM Sigsoft or SBC (Brazilian Computer Society) is desirable. 
+                    If you want to apply for a student grant, check the informations bellow. <br>
                 </p>
+                <a href="registration.html#student" class="mt-10 inline-block bg-[#1C6EA4] hover:bg-[#001BB7] text-white px-8 py-4 rounded-xl font-semibold text-lg transition">
+                    More informations!
+                </a>
             </div> 
         </div>
     </section>
@@ -335,6 +335,7 @@
         
             <!-- Coluna 2: Redes Sociais -->
             <div class="flex flex-col items-center">
+                <h1 class="text-xl font-semibold mb-4">RoME 2026</h1>
                 <h2 class="text-xl font-semibold mb-4">Fourth Summer School on Robotic Mission Engineering</h2>
                 <h3 class="text-xl font-semibold mb-4">February 23 - 27 / 2026  • Brasilia/DF </h3>
             </div>

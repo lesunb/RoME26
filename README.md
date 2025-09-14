@@ -35,9 +35,4 @@ Official website for the **Fourth Summer School on Robotic Mission Engineering (
 
 🌐 [[https://lesunb.github.io/RoME26/](https://lesunb.github.io/RoME26/)]
 
-## 🛠️ Open and Run the Project
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/AnaBraz26/RoME26.git  
 

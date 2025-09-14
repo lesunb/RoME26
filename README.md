@@ -33,9 +33,7 @@ Official website for the **Fourth Summer School on Robotic Mission Engineering (
 
 ## 📁 Acess
 
-🔗 [https://github.com/AnaBraz26/RoME26] or
-
-🌐 [https://rome26.vercel.app/]
+🌐 [[https://lesunb.github.io/RoME26/](https://lesunb.github.io/RoME26/)]
 
 ## 🛠️ Open and Run the Project
 

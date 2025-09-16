@@ -53,6 +53,7 @@
             >
             Program
             </button>
+
             <button 
               onclick="showTab('workingsession')" 
               id="tab-workingsession" 
@@ -60,28 +61,14 @@
             >
               Working Sessions
             </button>
-          </div>
 
-<!-------- Working sessions --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-          <div id="tab-content-workingsession" class="flex flex-col md:flex-row justify-between md:items-start w-full gap-8">       
-            <div class="flex flex-col md:flex-row gap-10 items-start w-full">
-              <div class="w-full flex flex-col space-y-10">
-                
-                <!-- Card Begin-->
-                <!-- <div class="bg-[#BED7DC] rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
-                  <div class="flex-1 text-center md:text-left">
-                    <h3 style="color: #001BB7;" class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Name of the Working Sessions</h3>
-                    <h4 style="color: #001BB7;" class="text-xl md:text-xl font-bold text-[#673FBC] mb-2">Students</h4>
-                    <p class="text-sm md:text-base leading-relaxed text-justify"> About the Working Session</p>
-                  </div>                
-                </div> -->
-                <!-- Card Finish-->
-                <h3 style="color: #001BB7;" class="text-4xl md:text-6xl font-bold leading-tight text-center py-8">
-                  Soon...
-                </h3>
-
-              </div>
-            </div> 
+            <button 
+                onclick="showTab('competition')" 
+                id="tab-competition" 
+                class="pb-2 px-2 sm:px-0 whitespace-nowrap border-b-4 border-[#673FBC] text-[#000000] hover:text-[#001BB7] transition-colors"
+              >
+                Robotic Competition
+            </button>
           </div>
 
 <!----------- PROGRAMAÇÃO ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -138,6 +125,50 @@
         </div>
     </section> 
 
+<!-------- Working sessions --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+          <div id="tab-content-workingsession" class="flex flex-col md:flex-row justify-between md:items-start w-full gap-8">       
+            <div class="flex flex-col md:flex-row gap-10 items-start w-full">
+              <div class="w-full flex flex-col space-y-10">
+                
+                <!-- Card Begin-->
+                <!-- <div class="bg-[#BED7DC] rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
+                  <div class="flex-1 text-center md:text-left">
+                    <h3 style="color: #001BB7;" class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Name of the Working Sessions</h3>
+                    <h4 style="color: #001BB7;" class="text-xl md:text-xl font-bold text-[#673FBC] mb-2">Students</h4>
+                    <p class="text-sm md:text-base leading-relaxed text-justify"> About the Working Session</p>
+                  </div>                
+                </div> -->
+                <!-- Card Finish-->
+                <h3 style="color: #001BB7;" class="text-4xl md:text-6xl font-bold leading-tight text-center py-8">
+                  Soon...
+                </h3>
+
+              </div>
+            </div> 
+          </div>
+
+
+<!-------- COmpetition --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+          <div id="tab-content-competition" class="flex flex-col md:flex-row justify-between md:items-start w-full gap-8">       
+            <div class="flex flex-col md:flex-row gap-10 items-start w-full">
+              <div class="w-full flex flex-col space-y-10">
+                
+                <!-- Card Begin-->
+                <!-- <div class="bg-[#BED7DC] rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
+                  <div class="flex-1 text-center md:text-left">
+                    <h3 style="color: #001BB7;" class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Name of the Working Sessions</h3>
+                    <h4 style="color: #001BB7;" class="text-xl md:text-xl font-bold text-[#673FBC] mb-2">Students</h4>
+                    <p class="text-sm md:text-base leading-relaxed text-justify"> About the Working Session</p>
+                  </div>                
+                </div> -->
+                <!-- Card Finish-->
+                <h3 style="color: #001BB7;" class="text-4xl md:text-6xl font-bold leading-tight text-center py-8">
+                  Soon...
+                </h3>
+
+              </div>
+            </div> 
+          </div>
         
     <!------------------------------------------ Footer ---------------------------------------------------------------------------------->
 
@@ -178,16 +209,20 @@
       function showTab(tab) {
         const workingsessionBtn = document.getElementById("tab-workingsession");
         const programbtn = document.getElementById("tab-program");
+        const competitionbtn = document.getElementById("tab-competition");
 
         const workingsessionContent = document.getElementById("tab-content-workingsession");
         const programContent = document.getElementById("tab-content-program");
+        const competitionContent = document.getElementById("tab-content-competition");
 
         // Primeiro, resetar todos os estados
         workingsessionBtn.classList.remove("border-b-4", "border-[#001BB7]");
         programbtn.classList.remove("border-b-4", "border-[#001BB7]");
+        competitionbtn.classList.remove("border-b-4", "border-[#001BB7]");
         
         workingsessionContent.classList.add("hidden");
         programContent.classList.add("hidden");
+        competitionContent.classList.add("hidden");
       
         // Depois, ativar a tab selecionada (ou program como padrão)
         const selectedTab = tab || "program"; // Se tab for undefined, usa "program"
@@ -195,7 +230,11 @@
         if (selectedTab === "workingsession") {
           workingsessionBtn.classList.add("border-b-4", "border-[#001BB7]");
           workingsessionContent.classList.remove("hidden");
-        } 
+        }         
+        else if (selectedTab === "competition") {
+          competitionbtn.classList.add("border-b-4", "border-[#001BB7]");
+          competitionContent.classList.remove("hidden");
+        }
         else {
           // Padrão: program
           programbtn.classList.add("border-b-4", "border-[#001BB7]");

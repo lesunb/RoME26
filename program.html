@@ -75,10 +75,6 @@
         <div id="tab-content-program" class="hidden w-full mt-8 px-2 sm:px-4">
           <p class="text-xl sm:text-2xl md:text-3xl text-center mb-6 font-semibold text-[#001BB7]">Preliminary General Program:</p>
 
-          <!-- Carrossel -->
-          <!-- <div class="relative w-full overflow-hidden max-w-5xl mx-auto">
-            <div id="program-carousel" class="flex transition-transform duration-700"> -->
-            
               <!-- Dia 1 -->
              <div class="min-w-full mb-12 px-2">
                   <h3 class="text-lg sm:text-xl md:text-2xl text-center font-bold text-[#001BB7]">Day 1 - 23/02</h3>
@@ -401,12 +397,6 @@
             </div>
         </div>
 
-            <!-- Botões -->
-            <!-- <button id="prevBtn" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white px-3 py-1 rounded hover:bg-[#001BB7]">❮</button>
-            <button id="nextBtn" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white px-3 py-1 rounded hover:bg-[#001BB7]">❯</button>
-          </div>
-        </div> -->
-
 <!-------- Working sessions --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
           <div id="tab-content-workingsession" class="flex flex-col md:flex-row justify-between md:items-start w-full gap-8">       
             <div class="flex flex-col md:flex-row gap-10 items-start w-full">
@@ -471,26 +461,143 @@
 
 <!-------- COmpetition --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
           <div id="tab-content-competition" class="flex flex-col md:flex-row justify-between md:items-start w-full gap-8">       
-            <div class="flex flex-col md:flex-row gap-10 items-start w-full">
-              <div class="w-full flex flex-col space-y-10">
-                
-                <!-- Card Begin-->
-                <!-- <div class="bg-[#BED7DC] rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
-                  <div class="flex-1 text-center md:text-left">
-                    <h3 style="color: #001BB7;" class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Name of the Working Sessions</h3>
-                    <h4 style="color: #001BB7;" class="text-xl md:text-xl font-bold text-[#673FBC] mb-2">Students</h4>
-                    <p class="text-sm md:text-base leading-relaxed text-justify"> About the Working Session</p>
-                  </div>                
-                </div> -->
-                <!-- Card Finish-->
-                <h3 style="color: #001BB7;" class="text-4xl md:text-6xl font-bold leading-tight text-center py-8">
-                  Soon...
-                </h3>
-
+        
+            <section class="flex flex-col text-justify" >
+              <div class="flex container mx-auto px-6 md:px-50 grid items-center gap-8">
+                  <h1 style="color: #001BB7;" class="text-xl mt-4 sm:text-2xl md:text-3xl text-center font-semibold text-[#001BB7]">
+                      Overview
+                  </h1>
+                  <hr class="border-t border-[#001BB7]">
+                  <p class="flex text-l text-black">
+                    The TurtleRescue Challenge is a fast-paced robotics competition where teams program a TurtleBot4 to explore a small indoor “disaster zone,” locate victim markers, and return safely to base with a mission report. Designed for participants with preliminary knowledge in ROS and Gazebo simulator, the challenge blends autonomous navigation, perception, and lightweight mission planning in a friendly, hands-on setting. </br>
+                    TurtleRescue gives students a taste of real autonomous robotics and search-and-rescue mission design, using accessible tools and a playful scenario that mirrors the spirit of real rescue scenarios in a friendly format.</br>
+                    During the event, each team will have 30 minutes to run their robot in the arena, navigating around obstacles, detecting AprilTags or colored objects that represent victims, and logging their positions. Points are awarded for correct detections, accurate localization, safe navigation, and successful return to base. Teams may start building their solution via Gazebo and set their local environment for running experiments. During RoME, participants will have access to the physical robot (Turtlebot 4 Lite), where they can test their code. The full competition fits within a 2-hour window, including briefings, runs, and score. The winners will be awarded during the last day of RoME presentations. 
+                  </p>
+                    
+                  <ul class="list-disc ml-6 space-y-1 text-black">
+                    <li><a class="font-bold">Goals:</a> Teams must program a TurtleBot4 to autonomously explore a predefined arena, detect target objects (victims), and return to a base with collected information.</li>
+                    <li><a class="font-bold">Duration:</a> 2-hour competition session + testing sessions during RoME’26.</li>
+                    <li><a class="font-bold">Teams:</a> Up to 4 teams (1 TurtleBot4 per match cycle).</li>
+                    <li><a class="font-bold">Robots:</a> 4× TurtleBot4 (standard configuration with LiDAR + RGB camera).</li>
+                    <li><a class="font-bold">Difficulty:</a> Introductory to intermediate, but with clear progression toward real mission engineering.</li>
+                  </ul>
               </div>
-            </div> 
+
+              <div class="flex container mx-auto px-6 md:px-50 grid items-center gap-8 mt-10">
+                  <h1 style="color: #001BB7;" class="text-xl mt-4 sm:text-2xl md:text-3xl text-center font-semibold text-[#001BB7]">
+                      Core Learning Objectives
+                  </h1>
+                  <hr class="border-t border-[#001BB7]">
+                  <p class="flex text-l text-black">
+                   Students will apply knowledge in:
+                  </p>
+                    
+                  <ul class="list-disc ml-6 space-y-1 text-black">
+                    <li>Robotics mission engineering.</li>
+                    <li>Mission decomposition tasks: navigation, perception, and reporting.</li>
+                    <li>Autonomous navigation fundamentals with ROS2 and Nav2.</li>
+                    <li>Software engineering practices.</li>
+                    <li>Simulation in ROS environment (Gazebo/Ignition).</li>
+                  </ul>
+              </div>
+
+              <div class="flex container mx-auto px-6 md:px-50 grid items-center gap-4 mt-10">
+                  <h1 style="color: #001BB7;" class="text-xl mt-4 sm:text-2xl md:text-3xl text-center font-semibold text-[#001BB7]">
+                    Objectives and Score
+                  </h1>
+                  <hr class="border-t border-[#001BB7]">
+                  <p class="flex text-l text-black">
+                   Each team’s robot must autonomously:
+                  </p>
+                    
+                  <ol class="list-decimal ml-6 space-y-1 text-black">
+                    <li>Start at a defined base station</li>
+                    <li>Map the unknown arena (SLAM)</li> 
+                    <li>Locate victims</li>
+                    <li>Record their positions</li> 
+                    <li>Return to base before time expires</li>
+                    <li>Deliver a final “Mission Report”, containing:
+                      <ol class="list-[lower-alpha] ml-6 mt-1 space-y-1">
+                        <li>List of detected victims</li>
+                        <li>Their coordinates (approximate)</li>
+                      </ol>
+                    </li>
+                  </ol>
+
+                  <p class="flex text-l text-black">
+                   Victims can be:
+                  </p>
+
+                  <ul class="list-disc ml-6 space-y-1 text-black">
+                    <li>AprilTag markers</li>
+                    <li>Printed images or markers representing the victims</li>
+                  </ul>
+
+                  <p class="flex text-l text-black">
+                   The score will be calculated by the number of correctly identified victims and the total area explored. Time may also be used as a tiebreaker.
+                  </p>
+              </div>
+
+              <div class="flex container mx-auto px-6 md:px-50 grid items-center gap-4 mt-10">
+                  <h1 style="color: #001BB7;" class="text-xl mt-4 sm:text-2xl md:text-3xl text-center font-semibold text-[#001BB7]">
+                    Rules
+                  </h1>
+                  <hr class="border-t border-[#001BB7]">
+                  <p class="flex text-l text-black">
+                   Time
+                  </p>
+                    
+                  <ul class="list-disc ml-6 space-y-1 text-black">
+                    <li>eams must submit a simulation of the mission before the start of RoME’26 (more instructions will be provided)</li>
+                    <li>Total match duration: 25 minutes per team.</li>
+                  </ul>
+
+                  <p class="flex text-l text-black">
+                   Allowed Resources
+                  </p>
+                    
+                  <ul class="list-disc ml-6 space-y-1 text-black">
+                    <li>Robotics mission engineering.</li>
+                    <li>Mission decomposition tasks: navigation, perception, and reporting.</li>
+                    <li>Autonomous navigation fundamentals with ROS2 and Nav2.</li>
+                    <li>Software engineering practices.</li>
+                    <li>Simulation in ROS environment (Gazebo/Ignition).</li>
+                  </ul>
+
+                  <p class="flex text-l text-black">
+                   Prohibited
+                  </p>
+                    
+                  <ul class="list-disc ml-6 space-y-1 text-black">
+                    <li>Robotics mission engineering.</li>
+                    <li>Mission decomposition tasks: navigation, perception, and reporting.</li>
+                    <li>Autonomous navigation fundamentals with ROS2 and Nav2.</li>
+                    <li>Software engineering practices.</li>
+                    <li>Simulation in ROS environment (Gazebo/Ignition).</li>
+                  </ul>
+              </div>
+
+              <div class="flex container mx-auto px-6 md:px-50 grid items-center gap-4 mt-10">
+                  <h1 style="color: #001BB7;" class="text-xl mt-4 sm:text-2xl md:text-3xl text-center font-semibold text-[#001BB7]">
+                    Requirements
+                  </h1>
+                  <hr class="border-t border-[#001BB7]">
+                  <p class="flex text-l text-black">
+                   Each team’s robot must autonomously:
+                  </p>
+                    
+                  <ul class="list-disc ml-6 space-y-1 text-black">
+                    <li>Robotics mission engineering.</li>
+                    <li>Mission decomposition tasks: navigation, perception, and reporting.</li>
+                    <li>Autonomous navigation fundamentals with ROS2 and Nav2.</li>
+                    <li>Software engineering practices.</li>
+                    <li>Simulation in ROS environment (Gazebo/Ignition).</li>
+                  </ul>
+              </div>
+
+            </section>       
           </div>
-    </section>   
+  
     <!------------------------------------------ Footer ---------------------------------------------------------------------------------->
 
     <footer id="contato" class="bg-[#11324D] text-gray-200 py-16 w-full h-full mt-28">

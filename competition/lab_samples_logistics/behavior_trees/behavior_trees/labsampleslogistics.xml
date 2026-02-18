@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<root main_tree_to_execute="BehaviorTree">
+    <!-- ////////// -->
+    <BehaviorTree ID="BehaviorTree">
+        <Sequence>
+            <Action ID="BoolPublisher" topic="/mission_started" value="true"/>
+            <Sequence>
+                <Fallback>
+                    <Condition ID="CheckOdomNode" name="AtNurseRoom" target="nurse_room" wait_duration_sec="20" x="" y=""/>
+                    <Sequence>
+                        <Action ID="BoolPublisher" topic="navigate_nurse" value="true"/>
+                        <Action ID="BoolPublisher" topic="atNurseRoom" value="true"/>
+                    </Sequence>
+                </Fallback>
+                <Action ID="BoolPublisher" topic="auth_nurse" value="true"/>
+                <Sequence>
+                    <Action ID="BoolPublisher" topic="open_drawer" value="true"/>
+                    <Action ID="BoolPublisher" topic="receive_sample" value="true"/>
+                    <Action ID="BoolPublisher" topic="open_drawer" value="false"/>
+                </Sequence>
+            </Sequence>
+            <Sequence>
+                <Fallback>
+                    <Condition ID="CheckOdomNode" name="AtLaboratory" target="laboratory" wait_duration_sec="20" x="" y=""/>
+                    <Sequence>
+                        <Action ID="BoolPublisher" topic="navigate_lab" value="true"/>
+                        <Action ID="GoToPose" name="NavigateToLaboratory" x="-3" y="6" yaw="0"/>
+                        <Action ID="BoolPublisher" topic="atLab" value="true"/>
+                    </Sequence>
+                </Fallback>
+                <Sequence>
+                    <Action ID="BoolPublisher" topic="open_drawer" value="true"/>
+                    <Action ID="BoolPublisher" topic="deliver_sample" value="true"/>
+                    <Action ID="BoolPublisher" topic="open_drawer" value="false"/>
+                </Sequence>
+                <Action ID="BoolPublisher" topic="/mission_completed" value="true"/>
+            </Sequence>
+        </Sequence>
+    </BehaviorTree>
+    <!-- ////////// -->
+    <TreeNodesModel>
+        <Action ID="BoolPublisher">
+            <input_port name="topic"/>
+            <input_port name="value"/>
+        </Action>
+        <Condition ID="CheckOdomNode">
+            <inout_port name="target"/>
+            <inout_port name="wait_duration_sec"/>
+            <inout_port name="x"/>
+            <inout_port name="y"/>
+        </Condition>
+        <Action ID="GoToPose">
+            <input_port name="x">Coordinate in X direction</input_port>
+            <input_port name="y">Coordinate in Y direction</input_port>
+            <input_port name="yaw">Yaw Angle in radians</input_port>
+        </Action>
+        <Condition ID="Subscriber">
+            <output_port name="message"/>
+            <input_port name="topic"/>
+            <input_port name="wait_duration_sec"/>
+        </Condition>
+    </TreeNodesModel>
+    <!-- ////////// -->
+</root>

@@ -39,7 +39,7 @@ Missions must be implemented using ROS2 Humble and the Turtlebot4 Lite robots. F
 
 ## Example Mission: Lab Samples Logistics
 
-In the Lab Samples mission, a robot must autonomously pick up and deliver samples inside a hospital Scenario. Namely:
+In the Lab Samples mission, a robot must autonomously pick up and deliver samples inside a hospital Scenario. 
 
 1. Start at the base station
 2. Navigate to a nurse position
@@ -48,5 +48,8 @@ In the Lab Samples mission, a robot must autonomously pick up and deliver sample
 5. Identify and authenticate the lab personnel
 6. Deliver the sample
 7. Return to base
+
+<img width="1987" height="1474" alt="image" src="https://github.com/user-attachments/assets/1b4e0f33-44dc-4292-a4cf-b740a015e400" />
+
 
 We provide an example implementation of this mission using the BT.CPP framework which you can use for your own mission.

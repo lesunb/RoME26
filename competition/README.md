@@ -49,7 +49,7 @@ In the Lab Samples mission, a robot must autonomously pick up and deliver sample
 6. Deliver the sample
 7. Return to base
 
-<img width="1987" height="1474" alt="image" src="https://github.com/user-attachments/assets/1b4e0f33-44dc-4292-a4cf-b740a015e400" />
+<img width="1988" height="369" alt="image" src="https://github.com/user-attachments/assets/1b4e0f33-44dc-4292-a4cf-b740a015e400" />
 
 
 We provide an example implementation of this mission using the BT.CPP framework which you can use for your own mission.

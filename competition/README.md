@@ -39,10 +39,9 @@ Missions must be implemented using ROS2 Humble and the Turtlebot4 Lite robots. F
 
 ## Example Mission: Lab Samples Logistics
 
-<img width="497" height="369" alt="image" src="https://github.com/user-attachments/assets/1b4e0f33-44dc-4292-a4cf-b740a015e400" />
-
 In the Lab Samples mission, a robot must autonomously pick up and deliver samples inside a hospital Scenario. 
 
+<img width="497" height="369" alt="image" src="https://github.com/user-attachments/assets/1b4e0f33-44dc-4292-a4cf-b740a015e400" />
 
 1. Start at the base station
 2. Navigate to a nurse position

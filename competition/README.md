@@ -51,4 +51,4 @@ In the Lab Samples mission, a robot must autonomously pick up and deliver sample
 6. Deliver the sample
 7. Return to base
 
-We provide an example [implementation]([https://openai.com](https://github.com/lesunb/RoME26/tree/main/competition/lab_samples_logistics)) of this mission using the BT.CPP framework which you can use for your own mission.
+We provide an example [implementation](https://github.com/lesunb/RoME26/tree/main/competition/lab_samples_logistics) of this mission using the BT.CPP framework which you can use for your own mission.

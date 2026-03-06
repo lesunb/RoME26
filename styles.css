@@ -89,3 +89,7 @@ nav ul li {
     padding-right: 1rem;
 }
 }
+
+.swiper-slide{
+  width: 160px !important;
+}

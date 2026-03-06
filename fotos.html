@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">  
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 
 <body class="bg-gradient-to-b bg-[#ededed] text-gray-900 min-h-screen flex flex-col antialiased">
@@ -34,46 +35,94 @@
         </ul> 
     </nav>
 
-    <section id="local" class="relative bg-cover bg-center mt-12 md:px-20 py-10">
-        <div class="container mx-auto grid md:grid-cols-2 items-start gap-10 px-6 py-12">
-            <div class="md:pr-10">
-                <h2 class="text-4xl md:text-5xl font-bold text-[#001BB7] mb-5">
-                   Accommodation
-                </h2>
-            
-                <!-- Abas -->
-                <div class="flex border-b border-blue-600 mb-8 space-x-8 text-lg font-semibold">
-                    <button onclick="showTab('cidade')" id="tab-cidade" class="pb-2 border-b-4 border-[#001BB7] text-[#000000] hover:text-[#673FBC]">Apartments</button>
-                </div>
-            
-                <div id="tab-content-cidade" class="block">
-                    <p class="text-lg leading-relaxed text-justify">
-                        The University of Brasilia will offer shared apartments exclusively for RoME participants within walking distance of the venue. The shared apartments will be able to accommodate up to 15 people, who will be allocated according to the order in which they are requested. We therefore recommend that you apply as soon as possible to secure your spot, together with your registration receipt.<br><br>
+<section id="photos" class="py-16 bg-gray-50">
 
-                        <strong>An important note: The accommodation is free of charge for the five days of RoME (Sunday 22 until Friday 27). If you wish to extend your stay, the additional daily rate will be BRL 49.00 per day. Please, make sure you bring your own bed linen, towels, toiletries as these items are not provided by the University of Brasilia.</strong><br><br>
-                        
-                        To apply for a reservation, please fill out the form available at this link. <br><br>
-                        
-                        We are happy to answer any questions and look forward to welcoming you on this very special venue! <br>
-                        
-                    </p>
+    <!-- Título -->
+    <div class="flex z-10 container mx-auto px-6 md:px-50 py-10 grid items-center gap-8 ">
+        <h2 style="color: #001BB7;"  class="text-4xl mt-10 md:text-6xl font-bold leading-tight text-center">
+            Photos
+        </h2>
+        <hr class="border-t border-blue-900">
+    </div>
 
-                    <a href="https://forms.gle/BRN8Z7Ws5Hxzwqhe8" target="_blank" class="inline-block bg-[#1C6EA4] hover:bg-[#001BB7] text-white px-8 py-4 rounded-xl font-semibold text-lg transition mt-10">
-                        Make your application!
-                    </a>
+    <!-- Conteúdo -->
+    <div class="max-w-6xl mx-auto px-6">
+
+        <!-- Carrossel -->
+        <div class="swiper mySwiper mb-10 max-w-4xl mx-auto">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide !w-auto">
+                    <img src="assets/photos/1.jpg" class="w-40 h-40 object-cover rounded-lg shadow-md">
                 </div>
-            </div>
-        
-            <div class="relative w-full">
-                <!-- Carrossel -->
-                <div id="carousel-container" class="aspect-square h-full rounded-2xl overflow-hidden shadow-lg">
-                    <img id="carousel-image" src="assets/apartamento/sala.jpeg" class="w-full h-full object-cover transition duration-500" />
-                    <button onclick="prevImage()" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 text-white px-3 py-1 rounded-r">‹</button>
-                    <button onclick="nextImage()" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 text-white px-3 py-1 rounded-l">›</button>
+
+                <div class="swiper-slide">
+                    <img src="assets/photos/2.jpg" class="w-40 h-40 object-cover rounded-lg shadow-md">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="assets/photos/3.JPG" class="w-40 h-40 object-cover rounded-lg shadow-md">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="assets/photos/4.JPG" class="w-40 h-40 object-cover rounded-lg shadow-md">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="assets/photos/5.JPG" class="w-40 h-40 object-cover rounded-lg shadow-md">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="assets/photos/6.jpeg" class="w-40 h-40 object-cover rounded-lg shadow-md">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="assets/photos/7.jpeg" class="w-40 h-40 object-cover rounded-lg shadow-md">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="assets/photos/8.jpeg" class="w-40 h-40 object-cover rounded-lg shadow-md">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="assets/photos/9.jpeg" class="w-40 h-40 object-cover rounded-lg shadow-md">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="assets/photos/10.jpeg" class="w-40 h-40 object-cover rounded-lg shadow-md">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="assets/photos/11.jpeg" class="w-40 h-40 object-cover rounded-lg shadow-md">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="assets/photos/12.jpeg" class="w-40 h-40 object-cover rounded-lg shadow-md">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="assets/photos/13.jpeg" class="w-40 h-40 object-cover rounded-lg shadow-md">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="assets/photos/14.jpeg" class="w-40 h-40 object-cover rounded-lg shadow-md">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="assets/photos/15.jpeg" class="w-40 h-40 object-cover rounded-lg shadow-md">
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- Botão Drive -->
+        <div class="text-center">
+            <a href="https://drive.google.com/drive/folders/1w_4XFyaz5ZitxAmhgBVxw-an-f87r6gO?usp=sharing" target="_blank" class="bg-[#1C6EA4] hover:bg-[#001BB7] text-white px-8 py-4 rounded-xl font-semibold text-lg transition">
+                View All Photos
+            </a>
+        </div>
+    </div>
+
+</section>
 
     <footer id="contato" class="bg-[#11324D] text-gray-200 py-10 w-full h-full">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-center md:justify-between items-center gap-10">
@@ -105,29 +154,20 @@
             <a href="https://www.linkedin.com/in/anabraz26?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="underline hover:text-purple-500 font-semibold">Ana Caroline.</a>
         </div>
     </footer>
-        
-   
-   <!-- carrosel das fotos -->
-   <script>
-        const images = ['assets/apartamento/sala.jpeg', 'assets/apartamento/sala2.jpeg', 'assets/apartamento/sacada.jpeg', 'assets/apartamento/sacada2.jpeg', 
-                        'assets/apartamento/cozinha.jpeg', 'assets/apartamento/cozinha2.jpeg', 'assets/apartamento/banheiro.jpeg', 'assets/apartamento/quarto.jpeg', 'assets/apartamento/quarto2.jpeg'];
-        let currentIndex = 0;
-
-        function showImage(index) {
-            document.getElementById("carousel-image").src = images[index];
-        }
-
-        function prevImage() {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            showImage(currentIndex);
-        }
-
-        function nextImage() {
-            currentIndex = (currentIndex + 1) % images.length;
-            showImage(currentIndex);
-        }
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 15,
+            slidesPerView: "auto",
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false
+            },
+            speed: 4000
+        });
     </script>
-
 </body>
 
 </html>
